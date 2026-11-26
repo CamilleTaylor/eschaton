@@ -1,0 +1,363 @@
+{
+ "about": "ESCHATON public prediction registry. Append-only, hash-chained; verify with js/registry.js. Do not edit by hand.",
+ "entries": [
+  {
+   "seq": 1,
+   "type": "forecast-batch",
+   "issued": "2026-11-26T12:57:33.457Z",
+   "body": {
+    "target": "2026-12",
+    "horizon": "calendar month 2026-12 (UTC), resolved after 2026-12-31",
+    "state": {
+     "month": "2026-11",
+     "days": 24,
+     "items": 439,
+     "note": "month to date when issued"
+    },
+    "training": {
+     "from": "2016-01",
+     "to": "2026-10",
+     "months": 126
+    },
+    "published": "persistence",
+    "models": {
+     "base": "long-run base rate",
+     "persistence": "base rate given whether the theme was above its median in the state month",
+     "convergence": "persistence, further split by whether 3+ themes ran high at once in the state month"
+    },
+    "methodInvalidation": "After 12 resolved months: if the persistence model's mean Brier score is not below the base-rate model's, the momentum claim is refuted; if the convergence model does not beat persistence, the convergence signal adds no predictive value.",
+    "code": "js/forecast.js",
+    "indexGenerated": "2026-11-25T00:00:00.000Z",
+    "forecasts": [
+     {
+      "kind": "theme",
+      "theme": "cataclysm",
+      "target": "2026-12",
+      "threshold": 0.08791,
+      "event": "above-median",
+      "lastState": 1,
+      "lastValue": 0.12756,
+      "p": {
+       "base": 0.496,
+       "persistence": 0.554,
+       "convergence": 0.667
+      },
+      "id": "2026-12/cataclysm",
+      "question": "Will \"Fire & explosions\" be above its usual level in 2026-12?",
+      "criteria": "Resolves YES if more than 8.79% of the news items in Wikipedia's Current events portal for 2026-12 touch the theme \"Fire & explosions\" (the theme's median monthly share over 2016-01 to 2026-10), as measured by ESCHATON's lexicon. Otherwise NO.",
+      "invalidation": "Wrong if the 2026-12 share ends at or below 8.79%.",
+      "baseRate": 0.496,
+      "probability": 0.554
+     },
+     {
+      "kind": "theme",
+      "theme": "war",
+      "target": "2026-12",
+      "threshold": 0.29894,
+      "event": "above-median",
+      "lastState": 1,
+      "lastValue": 0.38724,
+      "p": {
+       "base": 0.496,
+       "persistence": 0.844,
+       "convergence": 0.815
+      },
+      "id": "2026-12/war",
+      "question": "Will \"War & violence\" be above its usual level in 2026-12?",
+      "criteria": "Resolves YES if more than 29.89% of the news items in Wikipedia's Current events portal for 2026-12 touch the theme \"War & violence\" (the theme's median monthly share over 2016-01 to 2026-10), as measured by ESCHATON's lexicon. Otherwise NO.",
+      "invalidation": "Wrong if the 2026-12 share ends at or below 29.89%.",
+      "baseRate": 0.496,
+      "probability": 0.844
+     },
+     {
+      "kind": "theme",
+      "theme": "plague",
+      "target": "2026-12",
+      "threshold": 0.02104,
+      "event": "above-median",
+      "lastState": 1,
+      "lastValue": 0.02278,
+      "p": {
+       "base": 0.496,
+       "persistence": 0.797,
+       "convergence": 0.625
+      },
+      "id": "2026-12/plague",
+      "question": "Will \"Disease & outbreaks\" be above its usual level in 2026-12?",
+      "criteria": "Resolves YES if more than 2.10% of the news items in Wikipedia's Current events portal for 2026-12 touch the theme \"Disease & outbreaks\" (the theme's median monthly share over 2016-01 to 2026-10), as measured by ESCHATON's lexicon. Otherwise NO.",
+      "invalidation": "Wrong if the 2026-12 share ends at or below 2.10%.",
+      "baseRate": 0.496,
+      "probability": 0.797
+     },
+     {
+      "kind": "theme",
+      "theme": "decline",
+      "target": "2026-12",
+      "threshold": 0.01264,
+      "event": "above-median",
+      "lastState": 1,
+      "lastValue": 0.01822,
+      "p": {
+       "base": 0.496,
+       "persistence": 0.677,
+       "convergence": 0.75
+      },
+      "id": "2026-12/decline",
+      "question": "Will \"Corruption & decay\" be above its usual level in 2026-12?",
+      "criteria": "Resolves YES if more than 1.26% of the news items in Wikipedia's Current events portal for 2026-12 touch the theme \"Corruption & decay\" (the theme's median monthly share over 2016-01 to 2026-10), as measured by ESCHATON's lexicon. Otherwise NO.",
+      "invalidation": "Wrong if the 2026-12 share ends at or below 1.26%.",
+      "baseRate": 0.496,
+      "probability": 0.677
+     },
+     {
+      "kind": "theme",
+      "theme": "tyrant",
+      "target": "2026-12",
+      "threshold": 0.01761,
+      "event": "above-median",
+      "lastState": 0,
+      "lastValue": 0.00683,
+      "p": {
+       "base": 0.504,
+       "persistence": 0.438,
+       "convergence": 0.421
+      },
+      "id": "2026-12/tyrant",
+      "question": "Will \"Tyranny & crackdowns\" be above its usual level in 2026-12?",
+      "criteria": "Resolves YES if more than 1.76% of the news items in Wikipedia's Current events portal for 2026-12 touch the theme \"Tyranny & crackdowns\" (the theme's median monthly share over 2016-01 to 2026-10), as measured by ESCHATON's lexicon. Otherwise NO.",
+      "invalidation": "Wrong if the 2026-12 share ends at or below 1.76%.",
+      "baseRate": 0.504,
+      "probability": 0.438
+     },
+     {
+      "kind": "theme",
+      "theme": "network",
+      "target": "2026-12",
+      "threshold": 0.01352,
+      "event": "above-median",
+      "lastState": 1,
+      "lastValue": 0.0205,
+      "p": {
+       "base": 0.496,
+       "persistence": 0.523,
+       "convergence": 0.5
+      },
+      "id": "2026-12/network",
+      "question": "Will \"Networks & hacking\" be above its usual level in 2026-12?",
+      "criteria": "Resolves YES if more than 1.35% of the news items in Wikipedia's Current events portal for 2026-12 touch the theme \"Networks & hacking\" (the theme's median monthly share over 2016-01 to 2026-10), as measured by ESCHATON's lexicon. Otherwise NO.",
+      "invalidation": "Wrong if the 2026-12 share ends at or below 1.35%.",
+      "baseRate": 0.496,
+      "probability": 0.523
+     },
+     {
+      "kind": "theme",
+      "theme": "renewal",
+      "target": "2026-12",
+      "threshold": 0.00444,
+      "event": "above-median",
+      "lastState": 1,
+      "lastValue": 0.00683,
+      "p": {
+       "base": 0.504,
+       "persistence": 0.609,
+       "convergence": 0.692
+      },
+      "id": "2026-12/renewal",
+      "question": "Will \"Peace & renewal\" be above its usual level in 2026-12?",
+      "criteria": "Resolves YES if more than 0.44% of the news items in Wikipedia's Current events portal for 2026-12 touch the theme \"Peace & renewal\" (the theme's median monthly share over 2016-01 to 2026-10), as measured by ESCHATON's lexicon. Otherwise NO.",
+      "invalidation": "Wrong if the 2026-12 share ends at or below 0.44%.",
+      "baseRate": 0.504,
+      "probability": 0.609
+     },
+     {
+      "kind": "theme",
+      "theme": "deluge",
+      "target": "2026-12",
+      "threshold": 0.02332,
+      "event": "above-median",
+      "lastState": 0,
+      "lastValue": 0.00683,
+      "p": {
+       "base": 0.496,
+       "persistence": 0.246,
+       "convergence": 0.375
+      },
+      "id": "2026-12/deluge",
+      "question": "Will \"Floods & storms\" be above its usual level in 2026-12?",
+      "criteria": "Resolves YES if more than 2.33% of the news items in Wikipedia's Current events portal for 2026-12 touch the theme \"Floods & storms\" (the theme's median monthly share over 2016-01 to 2026-10), as measured by ESCHATON's lexicon. Otherwise NO.",
+      "invalidation": "Wrong if the 2026-12 share ends at or below 2.33%.",
+      "baseRate": 0.496,
+      "probability": 0.246
+     },
+     {
+      "kind": "theme",
+      "theme": "earth",
+      "target": "2026-12",
+      "threshold": 0.01741,
+      "event": "above-median",
+      "lastState": 0,
+      "lastValue": 0.00456,
+      "p": {
+       "base": 0.504,
+       "persistence": 0.313,
+       "convergence": 0.429
+      },
+      "id": "2026-12/earth",
+      "question": "Will \"Earthquakes & volcanoes\" be above its usual level in 2026-12?",
+      "criteria": "Resolves YES if more than 1.74% of the news items in Wikipedia's Current events portal for 2026-12 touch the theme \"Earthquakes & volcanoes\" (the theme's median monthly share over 2016-01 to 2026-10), as measured by ESCHATON's lexicon. Otherwise NO.",
+      "invalidation": "Wrong if the 2026-12 share ends at or below 1.74%.",
+      "baseRate": 0.504,
+      "probability": 0.313
+     },
+     {
+      "kind": "theme",
+      "theme": "ecology",
+      "target": "2026-12",
+      "threshold": 0.00775,
+      "event": "above-median",
+      "lastState": 0,
+      "lastValue": 0.00683,
+      "p": {
+       "base": 0.504,
+       "persistence": 0.415,
+       "convergence": 0.294
+      },
+      "id": "2026-12/ecology",
+      "question": "Will \"Climate & nature\" be above its usual level in 2026-12?",
+      "criteria": "Resolves YES if more than 0.78% of the news items in Wikipedia's Current events portal for 2026-12 touch the theme \"Climate & nature\" (the theme's median monthly share over 2016-01 to 2026-10), as measured by ESCHATON's lexicon. Otherwise NO.",
+      "invalidation": "Wrong if the 2026-12 share ends at or below 0.78%.",
+      "baseRate": 0.504,
+      "probability": 0.415
+     },
+     {
+      "kind": "theme",
+      "theme": "population",
+      "target": "2026-12",
+      "threshold": 0.02277,
+      "event": "above-median",
+      "lastState": 0,
+      "lastValue": 0.01367,
+      "p": {
+       "base": 0.496,
+       "persistence": 0.297,
+       "convergence": 0.25
+      },
+      "id": "2026-12/population",
+      "question": "Will \"Migration & population\" be above its usual level in 2026-12?",
+      "criteria": "Resolves YES if more than 2.28% of the news items in Wikipedia's Current events portal for 2026-12 touch the theme \"Migration & population\" (the theme's median monthly share over 2016-01 to 2026-10), as measured by ESCHATON's lexicon. Otherwise NO.",
+      "invalidation": "Wrong if the 2026-12 share ends at or below 2.28%.",
+      "baseRate": 0.496,
+      "probability": 0.297
+     },
+     {
+      "kind": "theme",
+      "theme": "wealth",
+      "target": "2026-12",
+      "threshold": 0.01305,
+      "event": "above-median",
+      "lastState": 1,
+      "lastValue": 0.02733,
+      "p": {
+       "base": 0.496,
+       "persistence": 0.641,
+       "convergence": 0.72
+      },
+      "id": "2026-12/wealth",
+      "question": "Will \"Money & markets\" be above its usual level in 2026-12?",
+      "criteria": "Resolves YES if more than 1.31% of the news items in Wikipedia's Current events portal for 2026-12 touch the theme \"Money & markets\" (the theme's median monthly share over 2016-01 to 2026-10), as measured by ESCHATON's lexicon. Otherwise NO.",
+      "invalidation": "Wrong if the 2026-12 share ends at or below 1.31%.",
+      "baseRate": 0.496,
+      "probability": 0.641
+     },
+     {
+      "kind": "theme",
+      "theme": "inversion",
+      "target": "2026-12",
+      "threshold": 0.00483,
+      "event": "above-median",
+      "lastState": 1,
+      "lastValue": 0.01822,
+      "p": {
+       "base": 0.504,
+       "persistence": 0.531,
+       "convergence": 0.538
+      },
+      "id": "2026-12/inversion",
+      "question": "Will \"Upheaval & reversals\" be above its usual level in 2026-12?",
+      "criteria": "Resolves YES if more than 0.48% of the news items in Wikipedia's Current events portal for 2026-12 touch the theme \"Upheaval & reversals\" (the theme's median monthly share over 2016-01 to 2026-10), as measured by ESCHATON's lexicon. Otherwise NO.",
+      "invalidation": "Wrong if the 2026-12 share ends at or below 0.48%.",
+      "baseRate": 0.504,
+      "probability": 0.531
+     },
+     {
+      "kind": "theme",
+      "theme": "deception",
+      "target": "2026-12",
+      "threshold": 0.00821,
+      "event": "above-median",
+      "lastState": 0,
+      "lastValue": 0.00683,
+      "p": {
+       "base": 0.504,
+       "persistence": 0.385,
+       "convergence": 0.286
+      },
+      "id": "2026-12/deception",
+      "question": "Will \"Hoaxes & deception\" be above its usual level in 2026-12?",
+      "criteria": "Resolves YES if more than 0.82% of the news items in Wikipedia's Current events portal for 2026-12 touch the theme \"Hoaxes & deception\" (the theme's median monthly share over 2016-01 to 2026-10), as measured by ESCHATON's lexicon. Otherwise NO.",
+      "invalidation": "Wrong if the 2026-12 share ends at or below 0.82%.",
+      "baseRate": 0.504,
+      "probability": 0.385
+     },
+     {
+      "kind": "convergence",
+      "target": "2026-12",
+      "threshold": 3,
+      "event": "high-convergence",
+      "lastState": 1,
+      "lastCount": 5,
+      "p": {
+       "base": 0.323,
+       "persistence": 0.415,
+       "convergence": 0.415
+      },
+      "p90": {
+       "cataclysm": 0.12103,
+       "celestial": 0.00853,
+       "war": 0.47464,
+       "famine": 0.00992,
+       "plague": 0.51551,
+       "decline": 0.02964,
+       "tyrant": 0.0282,
+       "control": 0.01021,
+       "machine": 0.00811,
+       "network": 0.02232,
+       "redeemer": 0.00265,
+       "renewal": 0.01312,
+       "deluge": 0.05611,
+       "waters": 0.00984,
+       "winter": 0.00882,
+       "earth": 0.03433,
+       "ecology": 0.02022,
+       "population": 0.04311,
+       "wealth": 0.0267,
+       "inversion": 0.01208,
+       "cycle": 0.00107,
+       "gnosis": 0,
+       "deception": 0.01608
+      },
+      "id": "2026-12/convergence",
+      "question": "Will 3 or more themes run unusually high at once in 2026-12?",
+      "criteria": "Resolves YES if, in 2026-12, at least 3 themes each exceed their own 90th-percentile monthly share (training months) while appearing in 3+ items. Otherwise NO.",
+      "invalidation": "Wrong if fewer than 3 themes run high in 2026-12.",
+      "baseRate": 0.323,
+      "probability": 0.415
+     }
+    ]
+   },
+   "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+   "hash": "736008f1ab75be40eacf892ed9a9aa634cc2a745a02ed9ee2b3a34be876480bb"
+  }
+ ],
+ "head": "736008f1ab75be40eacf892ed9a9aa634cc2a745a02ed9ee2b3a34be876480bb"
+}

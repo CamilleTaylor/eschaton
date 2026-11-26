@@ -1,0 +1,3482 @@
+[
+ {
+  "id": "dan-7",
+  "title": "The Four Beasts and the Little Horn",
+  "tradition": "Hebrew Bible (Judaism & Christianity)",
+  "family": "Abrahamic",
+  "date": {
+   "label": "c. 167–164 BCE (critical); 6th c. BCE (traditional)",
+   "year": -165
+  },
+  "source": {
+   "work": "Book of Daniel",
+   "locator": "Daniel 7:1–28",
+   "edition": "King James Version (1611), public domain"
+  },
+  "excerpt": {
+   "type": "quotation",
+   "text": "These great beasts, which are four, are four kings, which shall arise out of the earth… And he shall speak great words against the most High, and shall wear out the saints of the most High, and think to change times and laws: and they shall be given into his hand until a time and times and the dividing of time.",
+   "ref": "Daniel 7:17, 7:25 (KJV)"
+  },
+  "summary": "A vision of four beasts rising from the sea, read as four successive empires. From the fourth grows a 'little horn' that persecutes the holy ones and alters times and laws, until dominion passes to 'one like the Son of man' and an everlasting kingdom.",
+  "archetypes": {
+   "tyrant": 1,
+   "war": 0.6,
+   "cycle": 0.6,
+   "redeemer": 0.6,
+   "renewal": 0.4
+  },
+  "keywords": [
+   "beast",
+   "beasts",
+   "little horn",
+   "ten horns",
+   "four kingdoms",
+   "four empires",
+   "persecution",
+   "saints",
+   "son of man",
+   "change times and laws"
+  ],
+  "markers": [
+   {
+    "label": "Sequence of four successive empires",
+    "terms": [
+     "four empires",
+     "four kingdoms",
+     "fourth empire",
+     "successive empires"
+    ]
+   },
+   {
+    "label": "Ruler who tries to change 'times and laws'",
+    "terms": [
+     "change the calendar",
+     "changes the law",
+     "constitution",
+     "rewrite laws",
+     "abolish"
+    ]
+   },
+   {
+    "label": "Persecution of the faithful",
+    "terms": [
+     "persecution",
+     "persecute",
+     "religious minority",
+     "believers",
+     "clergy arrested"
+    ]
+   },
+   {
+    "label": "'Time, times and half a time' (3½ periods)",
+    "terms": [
+     "three and a half",
+     "42 months",
+     "1260",
+     "three years and six months"
+    ]
+   }
+  ],
+  "specificity": {
+   "score": 3,
+   "rationale": "Gives a structured sequence (four kingdoms, ten horns, a 3½-period persecution) but in symbolic animal imagery without names or dates."
+  },
+  "evidence": {
+   "score": 3,
+   "rationale": "Text is well attested (Daniel fragments among the Dead Sea Scrolls). Most critical scholars date the book's final form to the Maccabean crisis, so its account of earlier empires is likely written after the fact; the forward-looking end of Antiochus IV in Daniel 11:40–45 does not match recorded history."
+  },
+  "contradictions": [],
+  "preconditions": [
+   {
+    "terms": [
+     "persecution",
+     "persecute",
+     "law",
+     "laws",
+     "calendar"
+    ],
+    "note": "The little horn must persecute the faithful and alter 'times and laws'; a generic powerful leader does not meet this."
+   }
+  ],
+  "parallels": [
+   {
+    "when": "167 BCE",
+    "event": "Antiochus IV Epiphanes profanes the Jerusalem Temple and bans Jewish observance",
+    "note": "The event most critical scholars see behind the little horn."
+   },
+   {
+    "when": "1st–5th c. CE",
+    "event": "Josephus and later Jerome read the fourth kingdom as Rome",
+    "note": "Shift from Greek to Roman identification as Rome became dominant."
+   },
+   {
+    "when": "16th–19th c.",
+    "event": "Protestant historicists identify the little horn with the papacy",
+    "note": "A confessional reading that drove many date calculations."
+   },
+   {
+    "when": "20th c.",
+    "event": "Dispensationalists map the ten horns onto a revived Roman Empire / European union",
+    "note": "Each era re-maps the beasts onto its own great powers."
+   }
+  ],
+  "interpretations": [
+   {
+    "school": "Critical-historical",
+    "reading": "A Maccabean-era resistance text: the beasts are Babylon, Media, Persia and Greece; the little horn is Antiochus IV."
+   },
+   {
+    "school": "Historicist",
+    "reading": "A continuous forecast of church history, with Rome as the fourth beast and the papacy as the little horn."
+   },
+   {
+    "school": "Futurist",
+    "reading": "The little horn is a future Antichrist; the fourth empire will revive before the end."
+   },
+   {
+    "school": "Jewish traditional",
+    "reading": "The four kingdoms are the exiles of Israel (Babylon, Persia, Greece, Rome/Edom) before redemption."
+   }
+  ],
+  "links": [
+   {
+    "label": "Daniel 7 (KJV), Bible Gateway",
+    "url": "https://www.biblegateway.com/passage/?search=Daniel%207&version=KJV"
+   }
+  ]
+ },
+ {
+  "id": "mat-24",
+  "title": "Wars and Rumours of Wars (Olivet Discourse)",
+  "tradition": "New Testament (Christianity)",
+  "family": "Abrahamic",
+  "date": {
+   "label": "c. 80–90 CE (Matthew); Mark 13 c. 66–70 CE",
+   "year": 85
+  },
+  "source": {
+   "work": "Gospel of Matthew",
+   "locator": "Matthew 24:1–36 (cf. Mark 13; Luke 21)",
+   "edition": "King James Version (1611), public domain"
+  },
+  "excerpt": {
+   "type": "quotation",
+   "text": "And ye shall hear of wars and rumours of wars: see that ye be not troubled: for all these things must come to pass, but the end is not yet. For nation shall rise against nation, and kingdom against kingdom: and there shall be famines, and pestilences, and earthquakes, in divers places.",
+   "ref": "Matthew 24:6–7 (KJV)"
+  },
+  "summary": "Jesus predicts the Temple's destruction, then lists wars, famines, pestilences, earthquakes, false messiahs and cosmic signs, adding that 'this generation shall not pass' before all is fulfilled, while no one knows the day or hour.",
+  "archetypes": {
+   "war": 0.9,
+   "famine": 0.7,
+   "plague": 0.7,
+   "earth": 0.7,
+   "deception": 0.7,
+   "celestial": 0.5,
+   "redeemer": 0.8,
+   "decline": 0.4
+  },
+  "keywords": [
+   "wars and rumours of wars",
+   "rumours of wars",
+   "rumors of wars",
+   "famines",
+   "pestilences",
+   "earthquakes",
+   "false christs",
+   "false prophets",
+   "abomination of desolation",
+   "Temple Mount",
+   "nation against nation"
+  ],
+  "markers": [
+   {
+    "label": "Jerusalem Temple destroyed or desecrated",
+    "terms": [
+     "Temple Mount",
+     "Jerusalem temple",
+     "Third Temple",
+     "Second Temple",
+     "Al-Aqsa"
+    ]
+   },
+   {
+    "label": "False messiahs performing signs",
+    "terms": [
+     "false prophet",
+     "false messiah",
+     "claims to be christ",
+     "impostor",
+     "cult leader"
+    ]
+   },
+   {
+    "label": "Sun darkened, stars falling (24:29)",
+    "terms": [
+     "sun darkened",
+     "stars fall",
+     "eclipse",
+     "meteor shower"
+    ]
+   },
+   {
+    "label": "Gospel preached to all nations (24:14)",
+    "terms": [
+     "all nations",
+     "worldwide mission",
+     "every nation"
+    ]
+   }
+  ],
+  "specificity": {
+   "score": 2,
+   "rationale": "Its signs (war, famine, plague, earthquake) recur in every century; only the Temple prediction is concrete."
+  },
+  "evidence": {
+   "score": 3,
+   "rationale": "Stable, early-attested text. Many scholars date Matthew after 70 CE, so the Temple prediction may describe an event already past; the time-frame of 24:34 is disputed."
+  },
+  "contradictions": [
+   {
+    "terms": [
+     "end of the world",
+     "end times",
+     "the end is near",
+     "apocalypse",
+     "final days",
+     "doomsday"
+    ],
+    "note": "Matthew 24:6 says wars and rumours of wars are 'not yet' the end, and 24:36 says no one knows the day or hour. Reading a war as a sign that the end is near runs against the passage itself."
+   }
+  ],
+  "preconditions": [
+   {
+    "terms": [
+     "Temple Mount",
+     "Jerusalem",
+     "Al-Aqsa",
+     "Third Temple"
+    ],
+    "note": "The discourse is anchored to the Jerusalem Temple; events with no connection to it match only the generic signs."
+   }
+  ],
+  "parallels": [
+   {
+    "when": "70 CE",
+    "event": "Roman legions under Titus destroy the Second Temple",
+    "note": "Preterists read most of the discourse as fulfilled here."
+   },
+   {
+    "when": "1914–1918",
+    "event": "First World War and the 1918 influenza pandemic",
+    "note": "Widely read at the time as 'wars… and pestilences'."
+   },
+   {
+    "when": "1844",
+    "event": "Millerite 'Great Disappointment'",
+    "note": "A failed date calculation (from Daniel 8:14) that leaned on Olivet imagery."
+   }
+  ],
+  "interpretations": [
+   {
+    "school": "Preterist",
+    "reading": "Fulfilled in the Jewish–Roman War and the fall of Jerusalem in 70 CE, within 'this generation'."
+   },
+   {
+    "school": "Futurist",
+    "reading": "Describes a future tribulation; 'generation' refers to the people alive when the signs begin."
+   },
+   {
+    "school": "Partial-preterist",
+    "reading": "The Temple portion was fulfilled in 70 CE; the cosmic signs and return remain future."
+   },
+   {
+    "school": "Critical",
+    "reading": "An apocalyptic expectation of an imminent end; C. S. Lewis called 24:34 'the most embarrassing verse in the Bible' (The World's Last Night, 1960)."
+   }
+  ],
+  "links": [
+   {
+    "label": "Matthew 24 (KJV), Bible Gateway",
+    "url": "https://www.biblegateway.com/passage/?search=Matthew%2024&version=KJV"
+   }
+  ]
+ },
+ {
+  "id": "rev-6",
+  "title": "The Four Horsemen",
+  "tradition": "New Testament (Christianity)",
+  "family": "Abrahamic",
+  "date": {
+   "label": "c. 95 CE (Domitian era; some argue c. 68–69 CE)",
+   "year": 95
+  },
+  "source": {
+   "work": "Book of Revelation",
+   "locator": "Revelation 6:1–8",
+   "edition": "King James Version (1611), public domain"
+  },
+  "excerpt": {
+   "type": "quotation",
+   "text": "And I looked, and behold a pale horse: and his name that sat on him was Death, and Hell followed with him. And power was given unto them over the fourth part of the earth, to kill with sword, and with hunger, and with death, and with the beasts of the earth.",
+   "ref": "Revelation 6:8 (KJV)"
+  },
+  "summary": "The opening of the first four seals releases riders on white, red, black and pale horses: conquest, war, scarcity (grain at a day's wage) and death, with authority over a quarter of the earth.",
+  "archetypes": {
+   "war": 1,
+   "famine": 0.9,
+   "plague": 0.8,
+   "tyrant": 0.5,
+   "wealth": 0.4
+  },
+  "keywords": [
+   "horsemen",
+   "four horsemen",
+   "pale horse",
+   "red horse",
+   "black horse",
+   "white horse",
+   "sword and famine",
+   "fourth part of the earth",
+   "measure of wheat"
+  ],
+  "markers": [
+   {
+    "label": "Staple food priced at a day's wage (6:6)",
+    "terms": [
+     "wheat price",
+     "grain price",
+     "bread price",
+     "food prices",
+     "price of bread"
+    ]
+   },
+   {
+    "label": "Death toll over a quarter of the earth",
+    "terms": [
+     "quarter of the world",
+     "fourth of the earth",
+     "25 percent of humanity",
+     "billions dead"
+    ]
+   },
+   {
+    "label": "Deaths by wild beasts",
+    "terms": [
+     "wild animals",
+     "animal attacks",
+     "zoonotic",
+     "zoonosis"
+    ]
+   }
+  ],
+  "specificity": {
+   "score": 2,
+   "rationale": "War, famine and death are perennial; only the grain-price detail and the 'fourth part' are measurable."
+  },
+  "evidence": {
+   "score": 4,
+   "rationale": "Firmly attested by c. 180 CE (Irenaeus) and certainly older than any modern event; the weakness is vagueness, not provenance."
+  },
+  "contradictions": [],
+  "preconditions": [
+   {
+    "terms": [
+     "quarter",
+     "fourth"
+    ],
+    "note": "The text gives the horsemen power over a fourth of the earth; local crises fall far short of that scale."
+   }
+  ],
+  "parallels": [
+   {
+    "when": "1st c. CE",
+    "event": "Roman–Parthian wars and grain shortages",
+    "note": "Preterists link the bow-carrying rider to Parthian archers."
+   },
+   {
+    "when": "1347–1351",
+    "event": "Black Death in Europe",
+    "note": "Contemporaries invoked the pale horse."
+   },
+   {
+    "when": "1498",
+    "event": "Albrecht Dürer's woodcut of the Four Horsemen",
+    "note": "Fixed the modern image of the riders."
+   }
+  ],
+  "interpretations": [
+   {
+    "school": "Preterist",
+    "reading": "First-century Roman imperial violence, Parthian threat and famine."
+   },
+   {
+    "school": "Historicist",
+    "reading": "Stages of the Roman Empire's decline."
+   },
+   {
+    "school": "Futurist",
+    "reading": "Judgments of a future seven-year tribulation."
+   },
+   {
+    "school": "Idealist",
+    "reading": "Recurring patterns of conquest, war, scarcity and death in every age."
+   }
+  ],
+  "links": [
+   {
+    "label": "Revelation 6 (KJV), Bible Gateway",
+    "url": "https://www.biblegateway.com/passage/?search=Revelation%206&version=KJV"
+   }
+  ]
+ },
+ {
+  "id": "rev-13",
+  "title": "The Mark of the Beast",
+  "tradition": "New Testament (Christianity)",
+  "family": "Abrahamic",
+  "date": {
+   "label": "c. 95 CE (some argue c. 68–69 CE)",
+   "year": 95
+  },
+  "source": {
+   "work": "Book of Revelation",
+   "locator": "Revelation 13:11–18",
+   "edition": "King James Version (1611), public domain"
+  },
+  "excerpt": {
+   "type": "quotation",
+   "text": "And he causeth all, both small and great, rich and poor, free and bond, to receive a mark in their right hand, or in their foreheads: And that no man might buy or sell, save he that had the mark, or the name of the beast, or the number of his name… and his number is Six hundred threescore and six.",
+   "ref": "Revelation 13:16–18 (KJV)"
+  },
+  "summary": "A second beast compels everyone to worship the first beast and its speaking image, and imposes a mark without which no one can buy or sell. The beast's number is 666 (616 in some early manuscripts).",
+  "archetypes": {
+   "control": 1,
+   "tyrant": 0.9,
+   "deception": 0.7,
+   "wealth": 0.6,
+   "machine": 0.3
+  },
+  "keywords": [
+   "mark of the beast",
+   "right hand",
+   "forehead",
+   "buy or sell",
+   "666",
+   "616",
+   "beast",
+   "worship",
+   "cashless",
+   "biometric",
+   "implant",
+   "microchip"
+  ],
+  "markers": [
+   {
+    "label": "Mark on the right hand or forehead",
+    "terms": [
+     "right hand",
+     "forehead",
+     "implant",
+     "microchip",
+     "palm scan",
+     "hand scan"
+    ]
+   },
+   {
+    "label": "No buying or selling without it",
+    "terms": [
+     "buy or sell",
+     "cashless",
+     "cbdc",
+     "payment",
+     "central bank digital currency"
+    ]
+   },
+   {
+    "label": "Imposed on all, small and great",
+    "terms": [
+     "mandatory",
+     "compulsory",
+     "all citizens",
+     "universal",
+     "required for everyone"
+    ]
+   },
+   {
+    "label": "Worship of the beast or its image",
+    "terms": [
+     "worship",
+     "idol",
+     "statue of the leader",
+     "worship the image"
+    ]
+   },
+   {
+    "label": "The number 666 / 616",
+    "terms": [
+     "666",
+     "616"
+    ]
+   }
+  ],
+  "specificity": {
+   "score": 3,
+   "rationale": "Concrete mechanism (mark, hand or forehead, economic exclusion, a number) without date or place."
+  },
+  "evidence": {
+   "score": 4,
+   "rationale": "Early, stable text. The manuscript variant 616 (e.g. Papyrus Oxyrhynchus 4499) shows the number was already being calculated against a name in antiquity."
+  },
+  "contradictions": [
+   {
+    "terms": [
+     "voluntary",
+     "optional",
+     "opt-in",
+     "opt in"
+    ],
+    "note": "Revelation 13:16 describes a mark imposed on all; a voluntary or optional system does not meet that condition."
+   }
+  ],
+  "preconditions": [
+   {
+    "terms": [
+     "worship",
+     "religious",
+     "idol",
+     "image"
+    ],
+    "note": "The mark is tied to worship of the beast and its image, not to technology alone."
+   },
+   {
+    "terms": [
+     "mandatory",
+     "compulsory",
+     "all",
+     "universal",
+     "everyone"
+    ],
+    "note": "It must be universal and enforced on everyone."
+   }
+  ],
+  "parallels": [
+   {
+    "when": "54–68 CE",
+    "event": "Nero Caesar: Hebrew spelling נרון קסר totals 666; the Latin-form spelling gives 616",
+    "note": "The most widely held scholarly identification."
+   },
+   {
+    "when": "1970s",
+    "event": "UPC barcode adoption",
+    "note": "Barcodes drew 'mark of the beast' fears in some churches."
+   },
+   {
+    "when": "2000s–2020s",
+    "event": "RFID implants, digital IDs, vaccine passes, CBDC pilots",
+    "note": "Each new identity or payment technology has been read against this passage."
+   }
+  ],
+  "interpretations": [
+   {
+    "school": "Preterist",
+    "reading": "Roman emperor cult and imperial coinage; the beast is Nero."
+   },
+   {
+    "school": "Historicist",
+    "reading": "The papacy or a corrupt church-state alliance."
+   },
+   {
+    "school": "Futurist",
+    "reading": "A literal future mark enforced by a world ruler, often linked to payment technology."
+   },
+   {
+    "school": "Idealist",
+    "reading": "A symbol of allegiance, set against the seal of God on the foreheads of the faithful (Revelation 7:3)."
+   }
+  ],
+  "links": [
+   {
+    "label": "Revelation 13 (KJV), Bible Gateway",
+    "url": "https://www.biblegateway.com/passage/?search=Revelation%2013&version=KJV"
+   }
+  ]
+ },
+ {
+  "id": "hadith-jibril",
+  "title": "Herders Competing in Tall Buildings",
+  "tradition": "Sunni Hadith (Islam)",
+  "family": "Abrahamic",
+  "date": {
+   "label": "Attributed to the 7th c. CE; compiled 9th c. CE",
+   "year": 850
+  },
+  "source": {
+   "work": "Hadith of Jibril",
+   "locator": "Sahih Muslim 8; Sahih al-Bukhari 50",
+   "edition": "Arabic collections; paraphrase by ESCHATON"
+  },
+  "excerpt": {
+   "type": "paraphrase",
+   "text": "Asked about the signs of the Hour, the Prophet said: when a slave woman gives birth to her mistress, and when you see barefoot, unclothed, destitute shepherds competing with one another in constructing tall buildings.",
+   "ref": "Sahih Muslim 8 (paraphrased)"
+  },
+  "summary": "Among the minor signs of the Hour: social inversion in which the poorest pastoralists come to vie with each other in building ever-taller structures.",
+  "archetypes": {
+   "inversion": 1,
+   "wealth": 0.8,
+   "decline": 0.4
+  },
+  "keywords": [
+   "tall buildings",
+   "tallest building",
+   "tallest tower",
+   "skyscraper",
+   "skyscrapers",
+   "supertall",
+   "herders",
+   "shepherds",
+   "barefoot",
+   "Bedouin"
+  ],
+  "markers": [
+   {
+    "label": "Competition to build the tallest structures",
+    "terms": [
+     "tallest",
+     "skyscraper",
+     "skyscrapers",
+     "tower",
+     "tall building",
+     "supertall"
+    ]
+   },
+   {
+    "label": "Builders are formerly poor pastoral peoples",
+    "terms": [
+     "Bedouin",
+     "herders",
+     "shepherds",
+     "desert",
+     "nomad",
+     "Gulf states",
+     "pastoral"
+    ]
+   },
+   {
+    "label": "Slave woman gives birth to her mistress",
+    "terms": [
+     "mistress",
+     "slave woman"
+    ]
+   }
+  ],
+  "specificity": {
+   "score": 3,
+   "rationale": "Names an unusual, observable combination (pastoral poverty turned into a race for height) but no date or place."
+  },
+  "evidence": {
+   "score": 4,
+   "rationale": "Graded sahih in Sunni scholarship; compiled about two centuries after the Prophet, and more than a millennium before modern skyscrapers."
+  },
+  "contradictions": [],
+  "preconditions": [
+   {
+    "terms": [
+     "herders",
+     "shepherds",
+     "Bedouin",
+     "nomad",
+     "desert",
+     "pastoral"
+    ],
+    "note": "The builders must be formerly destitute herders; tall buildings alone do not satisfy the sign."
+   }
+  ],
+  "parallels": [
+   {
+    "when": "2010",
+    "event": "Burj Khalifa opens in Dubai as the world's tallest building",
+    "note": "Frequently cited in modern sermons on this hadith."
+   },
+   {
+    "when": "2010s–2020s",
+    "event": "Jeddah Tower and other Gulf supertall projects",
+    "note": "The competitive framing ('competing') is what readers highlight."
+   }
+  ],
+  "interpretations": [
+   {
+    "school": "Traditional Sunni",
+    "reading": "A minor sign of the Hour, one of many; it says nothing on its own about timing."
+   },
+   {
+    "school": "Modern literal",
+    "reading": "Fulfilled by the Gulf skyscraper boom among peoples who were recently desert pastoralists."
+   },
+   {
+    "school": "Classical moral",
+    "reading": "A general reversal of social order in which the lowly rise to wealth and authority."
+   },
+   {
+    "school": "Skeptical",
+    "reading": "Minor signs are broad enough to be matched in many eras."
+   }
+  ],
+  "links": [
+   {
+    "label": "Sahih Muslim 8, sunnah.com",
+    "url": "https://sunnah.com/muslim:8"
+   },
+   {
+    "label": "Sahih al-Bukhari 50, sunnah.com",
+    "url": "https://sunnah.com/bukhari:50"
+   }
+  ]
+ },
+ {
+  "id": "hadith-euphrates",
+  "title": "The Euphrates Uncovers Gold",
+  "tradition": "Sunni Hadith (Islam)",
+  "family": "Abrahamic",
+  "date": {
+   "label": "Attributed to the 7th c. CE; compiled 9th c. CE",
+   "year": 850
+  },
+  "source": {
+   "work": "Sahih hadith collections",
+   "locator": "Sahih al-Bukhari 7119; Sahih Muslim 2894",
+   "edition": "Arabic collections; paraphrase by ESCHATON"
+  },
+  "excerpt": {
+   "type": "paraphrase",
+   "text": "The Euphrates will soon uncover a treasure (in another wording, a mountain) of gold; whoever is present should take nothing of it. In Muslim's version, people will fight over it and ninety-nine of every hundred will be killed.",
+   "ref": "Bukhari 7119; Muslim 2894 (paraphrased)"
+  },
+  "summary": "A named river, a specific uncovering of gold and a lethal struggle over it, with a warning not to take any of it.",
+  "archetypes": {
+   "waters": 1,
+   "wealth": 0.9,
+   "war": 0.6
+  },
+  "keywords": [
+   "Euphrates",
+   "Furat",
+   "gold",
+   "treasure",
+   "mountain of gold",
+   "uncover",
+   "uncovered"
+  ],
+  "markers": [
+   {
+    "label": "The Euphrates is named",
+    "terms": [
+     "Euphrates",
+     "Furat"
+    ]
+   },
+   {
+    "label": "Gold or treasure is exposed",
+    "terms": [
+     "gold",
+     "treasure",
+     "gold deposit"
+    ]
+   },
+   {
+    "label": "Lethal fighting over it",
+    "terms": [
+     "fight",
+     "fighting",
+     "killed",
+     "battle",
+     "war"
+    ]
+   }
+  ],
+  "specificity": {
+   "score": 4,
+   "rationale": "Names a river, a substance and an outcome; lacks only a date."
+  },
+  "evidence": {
+   "score": 4,
+   "rationale": "Graded sahih in two canonical collections compiled in the 9th century; long predates modern dams and droughts."
+  },
+  "contradictions": [],
+  "preconditions": [
+   {
+    "terms": [
+     "gold",
+     "treasure"
+    ],
+    "note": "Low water alone does not satisfy the hadith; it specifies gold uncovered."
+   }
+  ],
+  "parallels": [
+   {
+    "when": "1990",
+    "event": "Filling of Turkey's Atatürk Dam reservoir sharply reduces downstream Euphrates flow",
+    "note": "A human-made cause of lowered water."
+   },
+   {
+    "when": "2021–2023",
+    "event": "Drought and upstream dams lower Euphrates levels in Syria and Iraq",
+    "note": "Widely shared online as this sign; no gold deposit was reported."
+   }
+  ],
+  "interpretations": [
+   {
+    "school": "Traditional",
+    "reading": "A literal sign of the Hour: actual gold exposed by the river."
+   },
+   {
+    "school": "Modern metaphorical",
+    "reading": "'Gold' as oil or water wealth in the Euphrates basin (a modern reading without classical basis)."
+   },
+   {
+    "school": "Skeptical",
+    "reading": "Without a date, low-water episodes can be matched repeatedly and the claim can never fail."
+   }
+  ],
+  "links": [
+   {
+    "label": "Sahih al-Bukhari 7119, sunnah.com",
+    "url": "https://sunnah.com/bukhari:7119"
+   },
+   {
+    "label": "Sahih Muslim 2894, sunnah.com",
+    "url": "https://sunnah.com/muslim:2894"
+   }
+  ]
+ },
+ {
+  "id": "mishnah-sotah",
+  "title": "The Footsteps of the Messiah",
+  "tradition": "Rabbinic Judaism",
+  "family": "Abrahamic",
+  "date": {
+   "label": "Mishnah redacted c. 200 CE",
+   "year": 200
+  },
+  "source": {
+   "work": "Mishnah",
+   "locator": "Sotah 9:15 (cf. Talmud Sanhedrin 97a)",
+   "edition": "Hebrew text; paraphrase by ESCHATON"
+  },
+  "excerpt": {
+   "type": "paraphrase",
+   "text": "In the footsteps of the Messiah, insolence will increase and prices will soar. The government will turn to heresy with none to rebuke it. The wisdom of scribes will decay, those who fear sin will be despised, truth will be lacking, the young will shame the old, a man's enemies will be his own household, and the face of the generation will be like the face of a dog.",
+   "ref": "Mishnah Sotah 9:15 (paraphrased)"
+  },
+  "summary": "The classic rabbinic portrait of the generation before redemption: inflation, impudence, the collapse of learning and respect, and a government drifting into heresy.",
+  "archetypes": {
+   "decline": 1,
+   "inversion": 0.8,
+   "redeemer": 0.7,
+   "famine": 0.4,
+   "tyrant": 0.4,
+   "deception": 0.4
+  },
+  "keywords": [
+   "insolence",
+   "impudence",
+   "arrogance",
+   "heresy",
+   "chutzpah",
+   "footsteps of the Messiah",
+   "scholars despised",
+   "wisdom of scribes"
+  ],
+  "markers": [
+   {
+    "label": "Prices soar",
+    "terms": [
+     "inflation",
+     "prices",
+     "expensive",
+     "cost of living",
+     "price spike"
+    ]
+   },
+   {
+    "label": "Young shame the old",
+    "terms": [
+     "youth defy elders",
+     "disrespect for elders",
+     "young shame the old"
+    ]
+   },
+   {
+    "label": "Government turns to heresy",
+    "terms": [
+     "government turns to heresy",
+     "state heresy",
+     "secular government",
+     "godless government"
+    ]
+   },
+   {
+    "label": "Truth is lacking",
+    "terms": [
+     "misinformation",
+     "disinformation",
+     "post-truth",
+     "lies"
+    ]
+   }
+  ],
+  "specificity": {
+   "score": 1,
+   "rationale": "A moral portrait; nearly every generation has described itself this way."
+  },
+  "evidence": {
+   "score": 5,
+   "rationale": "Fixed, well-dated text, quoted and commented on continuously since antiquity."
+  },
+  "contradictions": [],
+  "preconditions": [],
+  "parallels": [
+   {
+    "when": "c. 500 CE",
+    "event": "Babylonian Talmud, Sanhedrin 97a, expands the list of signs",
+    "note": "Includes the debate between redemption by merit and redemption at a fixed time."
+   },
+   {
+    "when": "12th c.",
+    "event": "Maimonides warns against calculating the end (Mishneh Torah, Laws of Kings 12:2)",
+    "note": "An internal caution against date-setting."
+   }
+  ],
+  "interpretations": [
+   {
+    "school": "Rabbinic",
+    "reading": "The 'birth pangs of the Messiah': a period to endure with faith, not a timetable."
+   },
+   {
+    "school": "Maimonidean",
+    "reading": "Details of the end are unknowable; do not calculate dates."
+   },
+   {
+    "school": "Hasidic messianic",
+    "reading": "Present troubles signal that redemption is near and can be hastened by deeds."
+   },
+   {
+    "school": "Critical",
+    "reading": "A moralizing genre; its signs fit almost any period of upheaval."
+   }
+  ],
+  "links": [
+   {
+    "label": "Mishnah Sotah 9:15, Sefaria",
+    "url": "https://www.sefaria.org/Mishnah_Sotah.9.15"
+   }
+  ]
+ },
+ {
+  "id": "thomas-113",
+  "title": "The Kingdom Spread Upon the Earth",
+  "tradition": "Gospel of Thomas (Early Christian / Gnostic-associated)",
+  "family": "Gnostic",
+  "date": {
+   "label": "Composed 1st–2nd c. CE (debated); Greek fragments c. 200 CE; Coptic NHC II,2 c. 350 CE",
+   "year": 140
+  },
+  "source": {
+   "work": "Gospel of Thomas",
+   "locator": "Saying 113 (cf. Sayings 3, 51)",
+   "edition": "Nag Hammadi Codex II,2; paraphrase by ESCHATON"
+  },
+  "excerpt": {
+   "type": "paraphrase",
+   "text": "His disciples asked when the kingdom would come. Jesus said it will not come by watching for it, nor will anyone say 'look, here' or 'look, there.' Rather, the Father's kingdom is spread out upon the earth, and people do not see it.",
+   "ref": "Gospel of Thomas 113 (paraphrased)"
+  },
+  "summary": "A counter-prophecy: it refuses to point to external signs at all. The kingdom is already present and unseen.",
+  "archetypes": {
+   "gnosis": 1,
+   "renewal": 0.5
+  },
+  "keywords": [
+   "kingdom within",
+   "kingdom of heaven",
+   "inner kingdom",
+   "already here",
+   "unseen",
+   "gnosis",
+   "awakening"
+  ],
+  "markers": [],
+  "specificity": {
+   "score": 1,
+   "rationale": "Makes no forecast; it denies that the end can be read from events."
+  },
+  "evidence": {
+   "score": 4,
+   "rationale": "Attested in Greek (Oxyrhynchus papyri 1, 654, 655) and Coptic; its date of composition is debated."
+  },
+  "counterProphecy": true,
+  "contradictions": [
+   {
+    "terms": [
+     "end of the world",
+     "end times",
+     "sign of",
+     "apocalypse",
+     "countdown",
+     "imminent",
+     "doomsday",
+     "prophecy fulfilled"
+    ],
+    "note": "Saying 113 rejects watching for signs; treating any event as an omen contradicts its central claim."
+   }
+  ],
+  "preconditions": [],
+  "parallels": [
+   {
+    "when": "Canonical parallel",
+    "event": "Luke 17:20–21: the kingdom does not come with observation",
+    "note": "A shared saying tradition."
+   },
+   {
+    "when": "1945",
+    "event": "Discovery of the Nag Hammadi library in Upper Egypt",
+    "note": "Brought the full Coptic text to light."
+   }
+  ],
+  "interpretations": [
+   {
+    "school": "Realized eschatology",
+    "reading": "The end is not a future event but a present reality to be recognized."
+   },
+   {
+    "school": "Gnostic",
+    "reading": "Salvation is inner knowledge; the cosmos is not the place where redemption is announced."
+   },
+   {
+    "school": "Scholarly",
+    "reading": "Possibly a deliberate response to apocalyptic expectations circulating in early Christianity."
+   }
+  ],
+  "links": [
+   {
+    "label": "Gospel of Thomas overview, Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Gospel_of_Thomas"
+   }
+  ]
+ },
+ {
+  "id": "origin-world",
+  "title": "The Consummation of the Archons",
+  "tradition": "Nag Hammadi (Gnostic)",
+  "family": "Gnostic",
+  "date": {
+   "label": "c. late 3rd – early 4th c. CE; Coptic copies c. 350 CE",
+   "year": 300
+  },
+  "source": {
+   "work": "On the Origin of the World",
+   "locator": "Nag Hammadi Codex II,5 (also XIII,2), closing section",
+   "edition": "Coptic; paraphrase by ESCHATON"
+  },
+  "excerpt": {
+   "type": "paraphrase",
+   "text": "Before the consummation, the heavens of the rulers are thrown into turmoil: the sun darkens, the moon withholds its light, the stars abandon their courses, and the archons' realm collapses into the abyss. Then the light returns to its root, and the deficiency is uprooted.",
+   "ref": "On the Origin of the World, closing section (summarized)"
+  },
+  "summary": "The end of a flawed cosmos ruled by archons: cosmic disorder, the collapse of their powers, and the return of scattered light to its source.",
+  "archetypes": {
+   "celestial": 0.9,
+   "gnosis": 0.9,
+   "cataclysm": 0.7,
+   "tyrant": 0.5,
+   "earth": 0.4
+  },
+  "keywords": [
+   "archons",
+   "rulers of darkness",
+   "abyss",
+   "consummation",
+   "sun darkened",
+   "moon darkened",
+   "stars fall",
+   "return of the light"
+  ],
+  "markers": [
+   {
+    "label": "Sun and moon darkened",
+    "terms": [
+     "sun darkened",
+     "eclipse",
+     "moon dark",
+     "darkness"
+    ]
+   },
+   {
+    "label": "Ruling powers collapse",
+    "terms": [
+     "regime collapse",
+     "rulers fall",
+     "government collapse"
+    ]
+   }
+  ],
+  "specificity": {
+   "score": 1,
+   "rationale": "Cosmological myth without time, place or measurable sign."
+  },
+  "evidence": {
+   "score": 4,
+   "rationale": "Two independent Coptic copies from the 4th century; provenance is secure, though the text is mythic rather than predictive."
+  },
+  "contradictions": [],
+  "preconditions": [],
+  "parallels": [
+   {
+    "when": "Comparative",
+    "event": "Mark 13:24–25 and Jewish apocalyptic imagery of a darkened sun and falling stars",
+    "note": "Shared cosmic-sign vocabulary."
+   },
+   {
+    "when": "20th c.",
+    "event": "C. G. Jung's interest in Gnostic texts (the 'Jung Codex', NHC I)",
+    "note": "Led to psychological readings of Gnostic myth."
+   }
+  ],
+  "interpretations": [
+   {
+    "school": "Sethian / Gnostic",
+    "reading": "The end is liberation: the false creator's order ends and light is restored."
+   },
+   {
+    "school": "Psychological",
+    "reading": "The archons as inner compulsions; the consummation as integration."
+   },
+   {
+    "school": "Modern analogical",
+    "reading": "Sometimes compared to simulation-hypothesis ideas; this is a modern analogy, not an ancient claim."
+   }
+  ],
+  "links": [
+   {
+    "label": "On the Origin of the World, Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/On_the_Origin_of_the_World"
+   }
+  ]
+ },
+ {
+  "id": "mani-fire",
+  "title": "The Great Fire of 1,468 Years",
+  "tradition": "Manichaeism",
+  "family": "Gnostic",
+  "date": {
+   "label": "c. 240s CE (Mani's Šābuhragān)",
+   "year": 242
+  },
+  "source": {
+   "work": "Šābuhragān (Mani) and Coptic 'Sermon on the Great War'",
+   "locator": "Middle Persian fragments from Turfan (e.g. M 470); Coptic Manichaean Homilies",
+   "edition": "Fragmentary; paraphrase by ESCHATON"
+  },
+  "excerpt": {
+   "type": "paraphrase",
+   "text": "At the end a Great War overtakes humanity and the faithful are persecuted. Jesus comes as judge and separates the righteous from the sinners. The powers that hold up the world depart, and the world burns in a Great Fire lasting 1,468 years, freeing the last particles of light before darkness is sealed away.",
+   "ref": "Šābuhragān eschatology (summarized)"
+  },
+  "summary": "A dualist finale: war, judgment, and a cosmic fire with a precise duration, after which light and darkness are separated forever.",
+  "archetypes": {
+   "cataclysm": 1,
+   "war": 0.7,
+   "redeemer": 0.6,
+   "gnosis": 0.6,
+   "cycle": 0.4
+  },
+  "keywords": [
+   "great war",
+   "world war",
+   "great fire",
+   "conflagration",
+   "world on fire",
+   "1468",
+   "Manichaean",
+   "Mani"
+  ],
+  "markers": [
+   {
+    "label": "A 'Great War' engulfs humanity",
+    "terms": [
+     "world war",
+     "great war",
+     "global war"
+    ]
+   },
+   {
+    "label": "World consumed by fire",
+    "terms": [
+     "global fire",
+     "world on fire",
+     "firestorm"
+    ]
+   },
+   {
+    "label": "Persecution of the elect",
+    "terms": [
+     "persecution",
+     "persecuted"
+    ]
+   }
+  ],
+  "specificity": {
+   "score": 2,
+   "rationale": "Gives an exact duration (1,468 years) but no starting point."
+  },
+  "evidence": {
+   "score": 3,
+   "rationale": "Authentic but fragmentary; the eschatology is reconstructed from Turfan fragments, Coptic homilies and Arabic quotations (al-Biruni)."
+  },
+  "contradictions": [],
+  "preconditions": [],
+  "parallels": [
+   {
+    "when": "Comparative",
+    "event": "Stoic ekpyrosis and Zoroastrian river of molten metal",
+    "note": "Mani drew on Iranian, Christian and Buddhist sources."
+   },
+   {
+    "when": "2016",
+    "event": "Antonio Panaino argues 1,468 = a Sothic cycle (1,461 years) plus a final week (7)",
+    "note": "A calendrical, not observational, number."
+   }
+  ],
+  "interpretations": [
+   {
+    "school": "Manichaean",
+    "reading": "The end completes the rescue of light trapped in matter."
+   },
+   {
+    "school": "Scholarly",
+    "reading": "The 1,468-year figure is an astronomical-calendrical construction."
+   },
+   {
+    "school": "Comparative",
+    "reading": "A synthesis of Iranian dualism and Christian judgment imagery."
+   }
+  ],
+  "links": [
+   {
+    "label": "Šābuhragān, Encyclopaedia Iranica",
+    "url": "https://www.iranicaonline.org/articles/sabuhragan/"
+   },
+   {
+    "label": "Shabuhragan, Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Shabuhragan"
+   }
+  ]
+ },
+ {
+  "id": "voluspa",
+  "title": "Ragnarök: Axe-Age, Wolf-Age",
+  "tradition": "Old Norse",
+  "family": "Pagan",
+  "date": {
+   "label": "Composed c. 1000 CE; Codex Regius manuscript c. 1270",
+   "year": 1000
+  },
+  "source": {
+   "work": "Völuspá (Poetic Edda); Snorri Sturluson, Gylfaginning",
+   "locator": "Völuspá st. 44–59 (numbering varies by edition); Gylfaginning ch. 51 for Fimbulwinter",
+   "edition": "H. A. Bellows translation (1923), public domain"
+  },
+  "excerpt": {
+   "type": "quotation",
+   "text": "Brothers shall fight and fell each other, / And sisters' sons shall kinship stain… / Axe-time, sword-time, shields are sundered, / Wind-time, wolf-time, ere the world falls… The sun turns black, earth sinks in the sea, / The hot stars down from heaven are whirled.",
+   "ref": "Völuspá 45, 57 (Bellows, 1923)"
+  },
+  "summary": "The seeress foretells kin-slaying and an age of axes and wolves, the sun turning black, the earth sinking into the sea and fire reaching the sky, then a green earth rising anew.",
+  "archetypes": {
+   "war": 0.9,
+   "cataclysm": 0.8,
+   "celestial": 0.8,
+   "winter": 0.8,
+   "decline": 0.7,
+   "deluge": 0.6,
+   "renewal": 0.8
+  },
+  "keywords": [
+   "Ragnarok",
+   "Ragnarök",
+   "wolf age",
+   "axe age",
+   "sword age",
+   "kin slaying",
+   "Fimbulwinter",
+   "world serpent",
+   "Fenrir",
+   "sun turns black"
+  ],
+  "markers": [
+   {
+    "label": "Kin fight kin",
+    "terms": [
+     "civil war",
+     "brothers",
+     "family feud",
+     "kin"
+    ]
+   },
+   {
+    "label": "The sun turns black",
+    "terms": [
+     "sun darkened",
+     "eclipse",
+     "sun black",
+     "darkened sky"
+    ]
+   },
+   {
+    "label": "Three winters with no summer (Fimbulwinter)",
+    "terms": [
+     "no summer",
+     "year without summer",
+     "volcanic winter",
+     "nuclear winter",
+     "three winters"
+    ]
+   },
+   {
+    "label": "Earth sinks into the sea",
+    "terms": [
+     "sinks into the sea",
+     "submerged",
+     "sea level"
+    ]
+   }
+  ],
+  "specificity": {
+   "score": 2,
+   "rationale": "Vivid but mythic; the Fimbulwinter's 'three winters' is its only measurable element."
+  },
+  "evidence": {
+   "score": 3,
+   "rationale": "Preserved in a 13th-century manuscript of a poem probably composed around Iceland's conversion; possible Christian influence; mythic rather than predictive genre."
+  },
+  "contradictions": [],
+  "preconditions": [],
+  "parallels": [
+   {
+    "when": "536 CE",
+    "event": "Volcanic 'dust veil' and years of cold across the Northern Hemisphere",
+    "note": "Gräslund and Price (Antiquity, 2012) argued it may echo in the Fimbulwinter myth."
+   },
+   {
+    "when": "1816",
+    "event": "'Year without a summer' after the 1815 Tambora eruption",
+    "note": "A historical cold-year analogue."
+   }
+  ],
+  "interpretations": [
+   {
+    "school": "Mythic-cyclical",
+    "reading": "Destruction is followed by a renewed green world; the gods' children return."
+   },
+   {
+    "school": "Christian-influence",
+    "reading": "The final renewal and the 'mighty one' who comes may reflect Christian ideas."
+   },
+   {
+    "school": "Climate-memory",
+    "reading": "A cultural memory of the 536 CE volcanic winter and resulting famine."
+   }
+  ],
+  "links": [
+   {
+    "label": "Völuspá, Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/V%C3%B6lusp%C3%A1"
+   }
+  ]
+ },
+ {
+  "id": "hesiod-iron",
+  "title": "The Race of Iron",
+  "tradition": "Archaic Greek",
+  "family": "Pagan",
+  "date": {
+   "label": "c. 700 BCE",
+   "year": -700
+  },
+  "source": {
+   "work": "Hesiod, Works and Days",
+   "locator": "Lines 174–201",
+   "edition": "H. G. Evelyn-White translation (1914), public domain"
+  },
+  "excerpt": {
+   "type": "quotation",
+   "text": "For now truly is a race of iron, and men never rest from labour and sorrow by day, and from perishing by night… And Zeus will destroy this race of mortal men also when they come to have grey hair on the temples at their birth.",
+   "ref": "Works and Days 176–181 (Evelyn-White, 1914)"
+  },
+  "summary": "The fifth age of humanity: toil, broken oaths, children who dishonour parents, might as right; it will end when babies are born grey-haired.",
+  "archetypes": {
+   "decline": 1,
+   "cycle": 0.9,
+   "inversion": 0.5,
+   "deception": 0.5,
+   "wealth": 0.3
+  },
+  "keywords": [
+   "iron age",
+   "race of iron",
+   "grey hair",
+   "gray hair",
+   "born grey",
+   "born gray",
+   "perjury",
+   "might makes right",
+   "children dishonour parents"
+  ],
+  "markers": [
+   {
+    "label": "Children born grey at the temples",
+    "terms": [
+     "born grey",
+     "born gray",
+     "newborn",
+     "premature aging",
+     "progeria"
+    ]
+   },
+   {
+    "label": "Aging parents dishonoured",
+    "terms": [
+     "elderly neglected",
+     "elder abuse",
+     "parents abandoned"
+    ]
+   },
+   {
+    "label": "Oaths broken, might makes right",
+    "terms": [
+     "perjury",
+     "broken treaty",
+     "might makes right"
+    ]
+   }
+  ],
+  "specificity": {
+   "score": 2,
+   "rationale": "One bizarre physical sign (grey-haired newborns) inside a general moral portrait."
+  },
+  "evidence": {
+   "score": 5,
+   "rationale": "Among the oldest surviving Greek texts; securely dated and transmitted."
+  },
+  "contradictions": [],
+  "preconditions": [],
+  "parallels": [
+   {
+    "when": "c. 2nd c. BCE",
+    "event": "Daniel 2's statue of gold, silver, bronze, iron and clay",
+    "note": "A parallel metal-ages scheme."
+   },
+   {
+    "when": "8 CE",
+    "event": "Ovid, Metamorphoses I, retells the ages of man",
+    "note": "Fixed the scheme in Latin literature."
+   }
+  ],
+  "interpretations": [
+   {
+    "school": "Didactic",
+    "reading": "A moral warning to Hesiod's brother Perses about justice and work."
+   },
+   {
+    "school": "Historical memory",
+    "reading": "Echoes of the Bronze Age collapse and the transition to iron."
+   },
+   {
+    "school": "Comparative",
+    "reading": "Part of a shared Near Eastern and Indo-Iranian 'ages of metal' tradition."
+   }
+  ],
+  "links": [
+   {
+    "label": "Ages of Man, Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ages_of_Man"
+   }
+  ]
+ },
+ {
+  "id": "virgil-ecl4",
+  "title": "The Child of the Returning Golden Age",
+  "tradition": "Roman (Sibylline)",
+  "family": "Pagan",
+  "date": {
+   "label": "c. 40 BCE",
+   "year": -40
+  },
+  "source": {
+   "work": "Virgil, Eclogue IV",
+   "locator": "Lines 4–10",
+   "edition": "Latin original, public domain"
+  },
+  "excerpt": {
+   "type": "quotation",
+   "text": "Ultima Cumaei venit iam carminis aetas; / magnus ab integro saeclorum nascitur ordo. / iam redit et Virgo, redeunt Saturnia regna.",
+   "ref": "Eclogue IV, 4–6. ('Now comes the last age of the Cumaean song; the great order of the ages is born anew. Now the Maiden returns, the reign of Saturn returns.')"
+  },
+  "summary": "Citing the Sibyl of Cumae, Virgil announces a child whose birth begins a renewed golden age of peace.",
+  "archetypes": {
+   "renewal": 1,
+   "redeemer": 0.9,
+   "cycle": 0.9
+  },
+  "keywords": [
+   "golden age",
+   "new order of the ages",
+   "Saturn",
+   "Sibyl",
+   "divine child",
+   "return of the golden age"
+  ],
+  "markers": [
+   {
+    "label": "Birth of a child heralding a new age",
+    "terms": [
+     "birth",
+     "child born",
+     "newborn heir",
+     "royal baby"
+    ]
+   },
+   {
+    "label": "Return of a golden age of peace",
+    "terms": [
+     "golden age",
+     "new era",
+     "lasting peace",
+     "peace treaty"
+    ]
+   }
+  ],
+  "specificity": {
+   "score": 2,
+   "rationale": "A child and an age, without name or date."
+  },
+  "evidence": {
+   "score": 5,
+   "rationale": "Securely dated Latin poem; its later Christian reading is well documented."
+  },
+  "contradictions": [],
+  "preconditions": [
+   {
+    "terms": [
+     "birth",
+     "child",
+     "born"
+    ],
+    "note": "The renewal is tied to a specific child's birth."
+   }
+  ],
+  "parallels": [
+   {
+    "when": "40 BCE",
+    "event": "Treaty of Brundisium between Octavian and Antony",
+    "note": "The likely political context; candidates for the child include an expected heir of Antony and Octavia."
+   },
+   {
+    "when": "4th c. CE",
+    "event": "The Oration to the Saints attributed to Constantine reads the poem as foretelling Christ",
+    "note": "Made Virgil a 'pagan prophet' for medieval readers."
+   }
+  ],
+  "interpretations": [
+   {
+    "school": "Political-historical",
+    "reading": "Celebrates a peace settlement and an anticipated dynastic birth."
+   },
+   {
+    "school": "Christian messianic",
+    "reading": "An unwitting pagan prophecy of the birth of Christ."
+   },
+   {
+    "school": "Sibylline-cyclical",
+    "reading": "Expresses the Etruscan-Roman idea of saecula, ages that turn and renew."
+   }
+  ],
+  "links": [
+   {
+    "label": "Eclogue 4, Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Eclogue_4"
+   }
+  ]
+ },
+ {
+  "id": "kali-yuga",
+  "title": "The Age of Kali and the Coming of Kalki",
+  "tradition": "Hindu (Puranic)",
+  "family": "Eastern",
+  "date": {
+   "label": "Bhāgavata Purāṇa c. 9th–10th c. CE (scholarly estimate)",
+   "year": 900
+  },
+  "source": {
+   "work": "Bhāgavata Purāṇa (cf. Viṣṇu Purāṇa 4.24 and 6.1)",
+   "locator": "Canto 12, chapter 2",
+   "edition": "Sanskrit; paraphrase by ESCHATON"
+  },
+  "excerpt": {
+   "type": "paraphrase",
+   "text": "In the age of Kali, wealth alone will be taken as the sign of good birth, conduct and merit; might alone will decide justice. Rulers will be little better than thieves, and people, harried by drought and taxes, will flee to the hills and forests. When righteousness has nearly vanished, the Lord will appear as Kalki, born to Viṣṇuyaśas in the village of Śambhala.",
+   "ref": "Bhāgavata Purāṇa 12.2 (paraphrased)"
+  },
+  "summary": "The last and darkest of the four yugas, marked by the rule of money, shrinking lifespans and predatory rulers, ending with the avatar Kalki and a return to the age of truth.",
+  "archetypes": {
+   "decline": 1,
+   "cycle": 1,
+   "wealth": 0.9,
+   "redeemer": 0.7,
+   "tyrant": 0.6,
+   "famine": 0.5,
+   "population": 0.3
+  },
+  "keywords": [
+   "Kali Yuga",
+   "yuga",
+   "Kalki",
+   "Shambhala",
+   "Sambhala",
+   "avatar",
+   "dharma",
+   "rulers as thieves",
+   "age of Kali"
+  ],
+  "markers": [
+   {
+    "label": "Wealth alone confers status",
+    "terms": [
+     "billionaire",
+     "wealth inequality",
+     "money rules",
+     "the rich"
+    ]
+   },
+   {
+    "label": "Rulers act like thieves",
+    "terms": [
+     "corrupt government",
+     "kleptocracy",
+     "tax hikes",
+     "looting"
+    ]
+   },
+   {
+    "label": "Drought and taxes drive people to flee",
+    "terms": [
+     "drought and taxes",
+     "flee to the forests",
+     "flee to the hills",
+     "tax burden"
+    ]
+   },
+   {
+    "label": "Kalki appears in Śambhala",
+    "terms": [
+     "Kalki",
+     "Shambhala",
+     "Sambhala"
+    ]
+   }
+  ],
+  "specificity": {
+   "score": 2,
+   "rationale": "Rich social detail, but spread over an age traditionally lasting 432,000 years."
+  },
+  "evidence": {
+   "score": 4,
+   "rationale": "Well-preserved Sanskrit text with parallel lists in older Purāṇas; composed long before modern events."
+  },
+  "contradictions": [
+   {
+    "terms": [
+     "end of kali yuga",
+     "kali yuga ending",
+     "golden age begins",
+     "satya yuga begins",
+     "age of truth begins"
+    ],
+    "note": "In traditional Puranic reckoning, Kali Yuga began in 3102 BCE and lasts 432,000 years; an imminent end requires a non-traditional chronology (such as Sri Yukteswar's 1894 cycle)."
+   }
+  ],
+  "preconditions": [],
+  "parallels": [
+   {
+    "when": "1894",
+    "event": "Sri Yukteswar's The Holy Science proposes a 24,000-year cycle in which humanity has already left Kali Yuga",
+    "note": "The basis of many modern 'new age' readings."
+   },
+   {
+    "when": "Colonial and modern eras",
+    "event": "Reformers and critics invoke Kali Yuga to describe social upheaval",
+    "note": "A durable lens for critique of the present."
+   }
+  ],
+  "interpretations": [
+   {
+    "school": "Traditional Puranic",
+    "reading": "Kali Yuga has hundreds of millennia left; Kalki is far in the future."
+   },
+   {
+    "school": "Yukteswar cycle",
+    "reading": "A shorter 24,000-year cycle places us in an ascending age."
+   },
+   {
+    "school": "Moral-allegorical",
+    "reading": "Kali describes inner and social states that can be resisted in any era."
+   },
+   {
+    "school": "Critical-historical",
+    "reading": "Reflects anxieties of its compilers about social change."
+   }
+  ],
+  "links": [
+   {
+    "label": "Bhāgavata Purāṇa 12.2, Vedabase",
+    "url": "https://vedabase.io/en/library/sb/12/2/"
+   },
+   {
+    "label": "Kali Yuga, Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Kali_Yuga"
+   }
+  ]
+ },
+ {
+  "id": "dn-26",
+  "title": "The Sword-Interval and Metteyya",
+  "tradition": "Theravāda Buddhism (Pāli Canon)",
+  "family": "Eastern",
+  "date": {
+   "label": "Oral canon; written down c. 1st c. BCE in Sri Lanka",
+   "year": -29
+  },
+  "source": {
+   "work": "Cakkavatti Sīhanāda Sutta",
+   "locator": "Dīgha Nikāya 26",
+   "edition": "Pāli; paraphrase by ESCHATON"
+  },
+  "excerpt": {
+   "type": "paraphrase",
+   "text": "As morality decays, the human lifespan falls until people live only ten years. Then comes a seven-day 'sword-interval' in which people see one another as beasts and kill. Those who hide in the forests emerge, resolve to do good, and lifespan rises again to 80,000 years, when the Buddha Metteyya will arise.",
+   "ref": "DN 26 (paraphrased)"
+  },
+  "summary": "A cycle of moral decline measured by shrinking lifespans, a brief cataclysm of violence, and recovery culminating in the next Buddha.",
+  "archetypes": {
+   "decline": 0.9,
+   "war": 0.8,
+   "redeemer": 0.9,
+   "renewal": 0.9,
+   "cycle": 0.8
+  },
+  "keywords": [
+   "lifespan",
+   "life expectancy",
+   "Maitreya",
+   "Metteyya",
+   "sword interval",
+   "morality",
+   "moral decay",
+   "next Buddha"
+  ],
+  "markers": [
+   {
+    "label": "Average lifespan collapses",
+    "terms": [
+     "life expectancy falls",
+     "lifespan declines",
+     "falling life expectancy"
+    ]
+   },
+   {
+    "label": "Seven days of mutual slaughter",
+    "terms": [
+     "seven days",
+     "week of violence",
+     "massacre"
+    ]
+   },
+   {
+    "label": "Metteyya arises",
+    "terms": [
+     "Maitreya",
+     "Metteyya"
+    ]
+   }
+  ],
+  "specificity": {
+   "score": 3,
+   "rationale": "Uses measurable quantities (lifespan in years, a seven-day interval) though without a calendar date."
+  },
+  "evidence": {
+   "score": 4,
+   "rationale": "Part of the early Pāli canon, transmitted orally and written down around the 1st century BCE."
+  },
+  "contradictions": [
+   {
+    "terms": [
+     "life expectancy rising",
+     "life expectancy rises",
+     "longevity",
+     "living longer"
+    ],
+    "note": "DN 26 tracks decline through falling lifespans; rising life expectancy runs the other way."
+   }
+  ],
+  "preconditions": [
+   {
+    "terms": [
+     "lifespan",
+     "life expectancy"
+    ],
+    "note": "The text's measure of decline is human lifespan."
+   }
+  ],
+  "parallels": [
+   {
+    "when": "12th–19th c.",
+    "event": "Maitreya-inspired millenarian movements in China, including White Lotus uprisings",
+    "note": "Political uses of the Maitreya hope."
+   },
+   {
+    "when": "1982",
+    "event": "Benjamin Creme's newspaper advertisements announcing a returned 'Maitreya'",
+    "note": "A modern esoteric appropriation."
+   }
+  ],
+  "interpretations": [
+   {
+    "school": "Theravāda cosmological",
+    "reading": "Vast cycles of decline and renewal; Metteyya is very distant."
+   },
+   {
+    "school": "Mahāyāna devotional",
+    "reading": "Maitreya as a present bodhisattva in Tuṣita heaven, a focus of devotion."
+   },
+   {
+    "school": "Ethical",
+    "reading": "The sutta's point is causal: social collapse follows from rulers neglecting the poor."
+   }
+  ],
+  "links": [
+   {
+    "label": "DN 26, SuttaCentral",
+    "url": "https://suttacentral.net/dn26"
+   }
+  ]
+ },
+ {
+  "id": "mappo",
+  "title": "Mappō: The Latter Day of the Dharma",
+  "tradition": "East Asian Buddhism (Japan)",
+  "family": "Eastern",
+  "date": {
+   "label": "Scheme from 6th c. CE Chinese texts; Japanese reckoning set onset in 1052 CE",
+   "year": 1052
+  },
+  "source": {
+   "work": "Three Ages of the Dharma doctrine",
+   "locator": "Mahāsaṃnipāta (Candragarbha section); Mappō Tōmyōki (attributed to Saichō, authorship disputed)",
+   "edition": "Paraphrase by ESCHATON"
+  },
+  "excerpt": {
+   "type": "paraphrase",
+   "text": "After the Buddha's passing come three ages: the True Dharma, when teaching, practice and awakening all remain; the Semblance Dharma, when teaching and practice remain but awakening fades; and the Latter Dharma, when only the teaching remains and practice fails. In Japan the Latter Day was reckoned to begin in 1052.",
+   "ref": "Three Ages doctrine (summarized)"
+  },
+  "summary": "A dated doctrine of decline that shaped medieval Japanese religion, including the rise of new schools offering salvation suited to a degenerate age.",
+  "archetypes": {
+   "decline": 1,
+   "cycle": 1,
+   "gnosis": 0.5,
+   "deception": 0.4
+  },
+  "keywords": [
+   "Mappo",
+   "Mappō",
+   "latter days",
+   "decline of the dharma",
+   "end of the dharma",
+   "Pure Land",
+   "nembutsu",
+   "Lotus Sutra",
+   "1052"
+  ],
+  "markers": [
+   {
+    "label": "Onset in 1052",
+    "terms": [
+     "1052"
+    ]
+   },
+   {
+    "label": "Clergy corrupt, practice fails",
+    "terms": [
+     "clergy scandal",
+     "monastic corruption",
+     "religious decline"
+    ]
+   }
+  ],
+  "specificity": {
+   "score": 3,
+   "rationale": "Gives a specific onset year, but its signs are spiritual and not measurable."
+  },
+  "evidence": {
+   "score": 4,
+   "rationale": "Well documented in East Asian sources; the 1052 dating is historically attested in Japanese chronicles and practice."
+  },
+  "contradictions": [],
+  "preconditions": [],
+  "parallels": [
+   {
+    "when": "1053",
+    "event": "The Phoenix Hall of Byōdō-in is dedicated, a Pure Land temple built as Mappō began",
+    "note": "Aristocratic response to the age of decline."
+   },
+   {
+    "when": "12th–13th c.",
+    "event": "Hōnen, Shinran and Nichiren found new movements premised on Mappō",
+    "note": "The doctrine reshaped Japanese Buddhism."
+   }
+  ],
+  "interpretations": [
+   {
+    "school": "Pure Land",
+    "reading": "In the latter age, rely on Amida Buddha's vow rather than one's own practice."
+   },
+   {
+    "school": "Nichiren",
+    "reading": "The Lotus Sutra and its title are the teaching for the latter age."
+   },
+   {
+    "school": "Zen (Dōgen)",
+    "reading": "Dōgen is reported to have rejected the idea that practice is impossible in the latter age."
+   },
+   {
+    "school": "Critical-historical",
+    "reading": "A response to political turmoil and clerical militarization in Heian Japan."
+   }
+  ],
+  "links": [
+   {
+    "label": "Three Ages of Buddhism, Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Three_Ages_of_Buddhism"
+   }
+  ]
+ },
+ {
+  "id": "bundahishn",
+  "title": "Frashokereti: The River of Molten Metal",
+  "tradition": "Zoroastrianism",
+  "family": "Eastern",
+  "date": {
+   "label": "Compiled 9th c. CE from older Avestan and Zand tradition",
+   "year": 850
+  },
+  "source": {
+   "work": "Greater Bundahishn",
+   "locator": "Ch. 34, 'On the Resurrection' (ch. 30 in E. W. West's SBE vol. 5 translation)",
+   "edition": "Middle Persian; paraphrase by ESCHATON"
+  },
+  "excerpt": {
+   "type": "paraphrase",
+   "text": "The Saošyant comes and the dead are raised. The metal in the mountains melts and flows over the earth like a river; all people pass through it. To the righteous it feels like walking through warm milk, to the wicked like walking through molten metal. Evil is defeated and the world is made wonderful again.",
+   "ref": "Greater Bundahishn 34 (paraphrased)"
+  },
+  "summary": "A final ordeal by molten metal that purifies the world, defeats Ahriman and renews creation, led by a world-saviour born of Zarathustra's seed.",
+  "archetypes": {
+   "redeemer": 1,
+   "renewal": 1,
+   "cataclysm": 0.8,
+   "gnosis": 0.3,
+   "tyrant": 0.3
+  },
+  "keywords": [
+   "Saoshyant",
+   "Frashokereti",
+   "molten metal",
+   "resurrection of the dead",
+   "Ahriman",
+   "renovation of the world",
+   "Zoroastrian"
+  ],
+  "markers": [
+   {
+    "label": "A saviour figure appears",
+    "terms": [
+     "saviour",
+     "savior",
+     "Saoshyant",
+     "messiah"
+    ]
+   },
+   {
+    "label": "Molten metal floods the earth",
+    "terms": [
+     "lava flow",
+     "molten",
+     "lava"
+    ]
+   }
+  ],
+  "specificity": {
+   "score": 2,
+   "rationale": "Vivid imagery without date or location."
+  },
+  "evidence": {
+   "score": 3,
+   "rationale": "A 9th-century compilation; the age of its core ideas is debated among scholars."
+  },
+  "contradictions": [],
+  "preconditions": [],
+  "parallels": [
+   {
+    "when": "6th–4th c. BCE",
+    "event": "Achaemenid-era contact between Iranian and Jewish communities",
+    "note": "The basis of a long, still-debated theory of Zoroastrian influence on resurrection beliefs."
+   }
+  ],
+  "interpretations": [
+   {
+    "school": "Zoroastrian orthodox",
+    "reading": "The renovation is the goal of history; human good deeds hasten it."
+   },
+   {
+    "school": "Comparative religion",
+    "reading": "Possibly influenced Jewish, Christian and Islamic eschatology (contested)."
+   },
+   {
+    "school": "Ethical",
+    "reading": "The same ordeal is gentle or terrible depending on one's deeds."
+   }
+  ],
+  "links": [
+   {
+    "label": "Frashokereti, Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Frashokereti"
+   }
+  ]
+ },
+ {
+  "id": "hopi",
+  "title": "The Gourd of Ashes and the House of Mica",
+  "tradition": "Hopi (as presented by Thomas Banyacya)",
+  "family": "Indigenous",
+  "date": {
+   "label": "Publicly presented 1948 onward; UN General Assembly hall address 10 Dec 1992",
+   "year": 1948
+  },
+  "source": {
+   "work": "Hopi prophecy as conveyed by Thomas Banyacya",
+   "locator": "Address at the United Nations, New York, 10 December 1992",
+   "edition": "Speech; paraphrase by ESCHATON"
+  },
+  "excerpt": {
+   "type": "paraphrase",
+   "text": "Hopi elders spoke of a 'gourd of ashes' that would fall from the sky, boil the oceans and burn the land, which they identified with the atomic bomb. They also foretold a 'house of mica' where world leaders would gather, and warned of purification if humanity did not return to balance with the earth.",
+   "ref": "Banyacya, UN address, 1992 (paraphrased)"
+  },
+  "summary": "A warning tradition presented publicly after 1945, linking atomic weapons and global institutions to a call for spiritual and ecological balance.",
+  "archetypes": {
+   "cataclysm": 0.9,
+   "ecology": 0.8,
+   "renewal": 0.6,
+   "decline": 0.5,
+   "machine": 0.3
+  },
+  "keywords": [
+   "Hopi",
+   "gourd of ashes",
+   "house of mica",
+   "purification",
+   "Mother Earth",
+   "atomic bomb",
+   "Koyaanisqatsi"
+  ],
+  "markers": [
+   {
+    "label": "'Gourd of ashes' falling from the sky",
+    "terms": [
+     "nuclear",
+     "atomic",
+     "bomb",
+     "mushroom cloud"
+    ]
+   },
+   {
+    "label": "Leaders gathering in a 'house of mica'",
+    "terms": [
+     "United Nations",
+     "UN headquarters",
+     "glass house"
+    ]
+   },
+   {
+    "label": "Purification of the world",
+    "terms": [
+     "purification"
+    ]
+   }
+  ],
+  "specificity": {
+   "score": 3,
+   "rationale": "Concrete images (gourd of ashes, house of mica) but undated."
+  },
+  "evidence": {
+   "score": 2,
+   "rationale": "No documented pre-1945 text of the 'gourd of ashes' is known; public versions date from 1948 on. Hopi villages and elders disagree about the prophecy's content and whether it should be shared."
+  },
+  "contradictions": [],
+  "preconditions": [],
+  "parallels": [
+   {
+    "when": "1945",
+    "event": "Atomic bombings of Hiroshima and Nagasaki",
+    "note": "The event the 'gourd of ashes' is identified with."
+   },
+   {
+    "when": "1948",
+    "event": "Hopi religious leaders meet and designate messengers, including Banyacya",
+    "note": "Start of the public prophecy mission."
+   },
+   {
+    "when": "1994",
+    "event": "Armin Geertz, The Invention of Prophecy",
+    "note": "Anthropological study of how Hopi prophecy changed over time."
+   }
+  ],
+  "interpretations": [
+   {
+    "school": "Hopi traditionalist",
+    "reading": "Sacred knowledge, varying by clan and village; not for outside reinterpretation."
+   },
+   {
+    "school": "Messenger tradition",
+    "reading": "A warning to the world, to be delivered to its leaders."
+   },
+   {
+    "school": "Anthropological",
+    "reading": "A living tradition that crystallized and adapted in response to postwar events."
+   },
+   {
+    "school": "New Age adoption",
+    "reading": "Widely repackaged by non-Hopi writers, raising concerns about appropriation."
+   }
+  ],
+  "links": [
+   {
+    "label": "Thomas Banyacya, Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Thomas_Banyacya"
+   }
+  ]
+ },
+ {
+  "id": "maya-2012",
+  "title": "The Completion of the 13th Bak'tun",
+  "tradition": "Classic Maya",
+  "family": "Indigenous",
+  "date": {
+   "label": "Carved c. 669 CE",
+   "year": 669
+  },
+  "source": {
+   "work": "Tortuguero Monument 6",
+   "locator": "Tortuguero, Tabasco, Mexico; Long Count 13.0.0.0.0",
+   "edition": "Hieroglyphic inscription; paraphrase by ESCHATON"
+  },
+  "excerpt": {
+   "type": "paraphrase",
+   "text": "The inscription looks ahead to the completion of the 13th bak'tun on 4 Ajaw 3 K'ank'in (21 or 23 December 2012 in the usual correlations). A damaged passage appears to say that the god Bolon Yokte' will descend. Nothing in it describes destruction.",
+   "ref": "Tortuguero Monument 6 (paraphrased)"
+  },
+  "summary": "A genuine Classic Maya reference to a 2012 calendar milestone, later recast by modern writers as a doomsday prophecy.",
+  "archetypes": {
+   "cycle": 1,
+   "celestial": 0.5,
+   "renewal": 0.4
+  },
+  "keywords": [
+   "Maya",
+   "Mayan calendar",
+   "baktun",
+   "long count",
+   "2012",
+   "Bolon Yokte",
+   "period ending",
+   "winter solstice"
+  ],
+  "markers": [
+   {
+    "label": "Date: 21 December 2012",
+    "terms": [
+     "2012",
+     "December 21",
+     "21 December"
+    ]
+   },
+   {
+    "label": "Bolon Yokte' descends",
+    "terms": [
+     "Bolon Yokte"
+    ]
+   }
+  ],
+  "specificity": {
+   "score": 4,
+   "rationale": "Exact calendar date, but no event beyond a period-ending and a deity's arrival."
+  },
+  "evidence": {
+   "score": 4,
+   "rationale": "Authentic Classic-period inscription; the evidence is strong for the date and weak for any catastrophe."
+  },
+  "contradictions": [
+   {
+    "terms": [
+     "end of the world",
+     "apocalypse",
+     "doomsday",
+     "catastrophe",
+     "destroyed"
+    ],
+    "note": "The monument records a calendar completion, not a catastrophe; the doomsday reading is a modern overlay."
+   }
+  ],
+  "preconditions": [],
+  "parallels": [
+   {
+    "when": "1987",
+    "event": "José Argüelles promotes the 'Harmonic Convergence' and a 2012 transformation",
+    "note": "A key New Age source of the 2012 phenomenon."
+   },
+   {
+    "when": "21 Dec 2012",
+    "event": "The date passes without catastrophe",
+    "note": "See the ledger."
+   }
+  ],
+  "interpretations": [
+   {
+    "school": "Epigraphic",
+    "reading": "A royal text tying a king's dedication to a far-future period ending."
+   },
+   {
+    "school": "New Age",
+    "reading": "A shift in consciousness, not destruction."
+   },
+   {
+    "school": "Popular doomsday",
+    "reading": "End of the world (a modern invention without Maya basis)."
+   },
+   {
+    "school": "Contemporary Maya",
+    "reading": "Maya groups publicly criticized the doomsday framing of their calendar."
+   }
+  ],
+  "links": [
+   {
+    "label": "Tortuguero (Maya site), Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Tortuguero_(Maya_site)"
+   },
+   {
+    "label": "2012 phenomenon, Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/2012_phenomenon"
+   }
+  ]
+ },
+ {
+  "id": "seven-fires",
+  "title": "The Seventh Fire and the Two Roads",
+  "tradition": "Anishinaabe",
+  "family": "Indigenous",
+  "date": {
+   "label": "Oral tradition; published 1979",
+   "year": 1979
+  },
+  "source": {
+   "work": "Edward Benton-Banai, The Mishomis Book: The Voice of the Ojibway",
+   "locator": "Seven Fires prophecy",
+   "edition": "Indian Country Communications (1979); paraphrase by ESCHATON"
+  },
+  "excerpt": {
+   "type": "paraphrase",
+   "text": "Seven prophets each foretold an era, or 'fire.' In the time of the Seventh Fire a new generation will retrace the path to recover what was lost. Humanity will face a choice between two roads, one well-worn but scorched, the other green. Choosing the green road will light the Eighth Fire, an age of peace.",
+   "ref": "Seven Fires prophecy (paraphrased)"
+  },
+  "summary": "A conditional prophecy: the future depends on a collective choice between destructive and restorative paths.",
+  "archetypes": {
+   "cycle": 1,
+   "renewal": 0.9,
+   "ecology": 0.7,
+   "gnosis": 0.5,
+   "decline": 0.4
+  },
+  "keywords": [
+   "seventh fire",
+   "eighth fire",
+   "Seven Fires",
+   "two roads",
+   "Anishinaabe",
+   "Ojibwe",
+   "scorched road"
+  ],
+  "markers": [
+   {
+    "label": "Choice between technological and spiritual paths",
+    "terms": [
+     "crossroads",
+     "choice",
+     "two paths"
+    ]
+   },
+   {
+    "label": "A new generation revives lost ways",
+    "terms": [
+     "language revitalization",
+     "cultural revival",
+     "youth revive",
+     "return to tradition"
+    ]
+   }
+  ],
+  "specificity": {
+   "score": 2,
+   "rationale": "Conditional and undated; it names a choice rather than an outcome."
+  },
+  "evidence": {
+   "score": 3,
+   "rationale": "First published in 1979; earlier oral transmission is not independently datable."
+  },
+  "conditional": true,
+  "contradictions": [],
+  "preconditions": [],
+  "parallels": [
+   {
+    "when": "c. 1400s–1600s",
+    "event": "Anishinaabe westward migration to the Great Lakes",
+    "note": "Earlier fires are tied to this migration in the tradition."
+   },
+   {
+    "when": "1970s onward",
+    "event": "Indigenous language and cultural revitalization",
+    "note": "Seen by many as the Seventh Fire generation's work."
+   }
+  ],
+  "interpretations": [
+   {
+    "school": "Anishinaabe teaching",
+    "reading": "A teaching about responsibility; the outcome is not fixed."
+   },
+   {
+    "school": "Environmental",
+    "reading": "The two roads as the choice between ecological ruin and sustainability."
+   },
+   {
+    "school": "Outsider adoption",
+    "reading": "Popular among non-Native audiences, sometimes detached from its community context."
+   }
+  ],
+  "links": [
+   {
+    "label": "Seven fires prophecy, Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Seven_fires_prophecy"
+   }
+  ]
+ },
+ {
+  "id": "white-buffalo",
+  "title": "The Return of White Buffalo Calf Woman",
+  "tradition": "Lakota",
+  "family": "Indigenous",
+  "date": {
+   "label": "Oral tradition; recorded versions from the 20th c. (e.g. Black Elk, The Sacred Pipe, 1953)",
+   "year": 1953
+  },
+  "source": {
+   "work": "Lakota oral tradition of Ptesáŋwiŋ",
+   "locator": "Recorded in Black Elk / Joseph Epes Brown, The Sacred Pipe (1953)",
+   "edition": "Paraphrase by ESCHATON"
+  },
+  "excerpt": {
+   "type": "paraphrase",
+   "text": "White Buffalo Calf Woman brought the sacred pipe and the seven rites to the Lakota. As she left she turned into a white buffalo calf, and many hold that a white buffalo's birth signals her return and a time of renewal and unity.",
+   "ref": "Lakota tradition (paraphrased)"
+  },
+  "summary": "A sign of renewal and a call to responsibility, recognized in the birth of a white buffalo calf.",
+  "archetypes": {
+   "renewal": 1,
+   "redeemer": 0.9,
+   "ecology": 0.6
+  },
+  "keywords": [
+   "white buffalo",
+   "white bison",
+   "white calf",
+   "buffalo calf",
+   "Lakota",
+   "sacred pipe",
+   "White Buffalo Calf Woman"
+  ],
+  "markers": [
+   {
+    "label": "A white buffalo calf is born",
+    "terms": [
+     "white buffalo",
+     "white bison",
+     "white calf"
+    ]
+   }
+  ],
+  "specificity": {
+   "score": 3,
+   "rationale": "A distinct observable sign, but what it heralds is broad."
+  },
+  "evidence": {
+   "score": 3,
+   "rationale": "Long oral tradition recorded in the 20th century; the specific 'return' sign is variously described."
+  },
+  "contradictions": [],
+  "preconditions": [],
+  "parallels": [
+   {
+    "when": "1994",
+    "event": "White calf 'Miracle' born near Janesville, Wisconsin",
+    "note": "Drew thousands of visitors and ceremonies."
+   },
+   {
+    "when": "2024",
+    "event": "A white bison calf reported born in Yellowstone's Lamar Valley",
+    "note": "Honoured by Lakota leaders in ceremony."
+   }
+  ],
+  "interpretations": [
+   {
+    "school": "Lakota spiritual",
+    "reading": "A reminder of the pipe's teachings and a call to unity and responsibility."
+   },
+   {
+    "school": "Ecological",
+    "reading": "Linked to bison restoration and land stewardship."
+   },
+   {
+    "school": "Skeptical / genetic",
+    "reading": "White coats come from albinism, leucism or crossbreeding; the sign's meaning is cultural, not predictive."
+   }
+  ],
+  "links": [
+   {
+    "label": "White Buffalo Calf Woman, Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/White_Buffalo_Calf_Woman"
+   }
+  ]
+ },
+ {
+  "id": "nostradamus-hister",
+  "title": "Hister and the Iron Cage",
+  "tradition": "Renaissance astrology",
+  "family": "Esoteric",
+  "date": {
+   "label": "1555",
+   "year": 1555
+  },
+  "source": {
+   "work": "Michel de Nostredame, Les Prophéties",
+   "locator": "Century II, quatrain 24",
+   "edition": "Lyon: Macé Bonhomme, 1555; original French, public domain"
+  },
+  "excerpt": {
+   "type": "quotation",
+   "text": "Bestes farouches de faim fluves tranner; / Plus part du champ encontre Hister sera, / En caige de fer le grand fera treisner, / Quand rien enfant de Germain observera.",
+   "ref": "Les Prophéties II.24 (1555). Roughly: 'Beasts wild with hunger will cross rivers; most of the field will be against Hister; the great one will be dragged in an iron cage when the child of Germany observes nothing.'"
+  },
+  "summary": "An undated quatrain famous for the word 'Hister', which modern readers took as Hitler; 'Hister' was a classical name for the lower Danube.",
+  "archetypes": {
+   "war": 0.9,
+   "tyrant": 0.9,
+   "famine": 0.4,
+   "waters": 0.3
+  },
+  "keywords": [
+   "Nostradamus",
+   "Hister",
+   "Hitler",
+   "iron cage",
+   "Danube",
+   "quatrain"
+  ],
+  "markers": [
+   {
+    "label": "The name 'Hister'",
+    "terms": [
+     "Hitler",
+     "Hister"
+    ]
+   },
+   {
+    "label": "Germany ('Germain')",
+    "terms": [
+     "Germany",
+     "German"
+    ]
+   },
+   {
+    "label": "A great one in an iron cage",
+    "terms": [
+     "cage",
+     "imprisoned",
+     "captured"
+    ]
+   },
+   {
+    "label": "Starving beasts crossing rivers",
+    "terms": [
+     "river crossing",
+     "crossed the river"
+    ]
+   }
+  ],
+  "specificity": {
+   "score": 2,
+   "rationale": "One name-like word; no date, and the quatrains are not in chronological order."
+  },
+  "evidence": {
+   "score": 3,
+   "rationale": "The 1555 printing is authentic, but later editions were altered and spurious quatrains circulated; famous matches are made after the fact."
+  },
+  "contradictions": [],
+  "preconditions": [],
+  "parallels": [
+   {
+    "when": "1939–1940",
+    "event": "Both Nazi and Allied propaganda distribute reinterpreted Nostradamus quatrains",
+    "note": "A documented case of prophecy shaped to fit current events."
+   },
+   {
+    "when": "1559",
+    "event": "Death of Henri II in a jousting accident (linked to I.35)",
+    "note": "The match that first made Nostradamus famous."
+   }
+  ],
+  "interpretations": [
+   {
+    "school": "Popular",
+    "reading": "A prediction of Hitler and the Second World War."
+   },
+   {
+    "school": "Philological",
+    "reading": "'Hister' is the Danube; 'Germain' can mean 'kin' or 'brother'."
+   },
+   {
+    "school": "Skeptical",
+    "reading": "Vague, unordered verses invite retrofitting (e.g. James Randi, The Mask of Nostradamus, 1990)."
+   }
+  ],
+  "links": [
+   {
+    "label": "Les Prophéties, Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Les_Proph%C3%A9ties"
+   }
+  ]
+ },
+ {
+  "id": "malachy",
+  "title": "Petrus Romanus, the Last Pope",
+  "tradition": "Catholic legend (attributed to St Malachy)",
+  "family": "Esoteric",
+  "date": {
+   "label": "First published 1595 (attributed to St Malachy, d. 1148)",
+   "year": 1595
+  },
+  "source": {
+   "work": "Prophecy of the Popes",
+   "locator": "Arnold Wion, Lignum Vitae (Venice, 1595)",
+   "edition": "Latin, public domain"
+  },
+  "excerpt": {
+   "type": "quotation",
+   "text": "In persecutione extrema S.R.E. sedebit Petrus Romanus, qui pascet oves in multis tribulationibus: quibus transactis civitas septicollis diruetur, & Iudex tremendus iudicabit populum suum. Finis.",
+   "ref": "Final entry. ('In the final persecution of the Holy Roman Church, Peter the Roman will reign, who will feed his sheep amid many tribulations; then the city of seven hills will be destroyed, and the dreadful Judge will judge his people. The End.')"
+  },
+  "summary": "112 short Latin mottos for popes ending with 'Peter the Roman' and the destruction of Rome.",
+  "archetypes": {
+   "cycle": 0.6,
+   "cataclysm": 0.6,
+   "deception": 0.5,
+   "redeemer": 0.4,
+   "tyrant": 0.3
+  },
+  "keywords": [
+   "pope",
+   "papacy",
+   "Petrus Romanus",
+   "Peter the Roman",
+   "conclave",
+   "Vatican",
+   "seven hills",
+   "last pope",
+   "papal election"
+  ],
+  "markers": [
+   {
+    "label": "A pope named Peter",
+    "terms": [
+     "Pope Peter",
+     "Petrus",
+     "Peter II"
+    ]
+   },
+   {
+    "label": "Rome destroyed",
+    "terms": [
+     "Rome destroyed",
+     "destruction of Rome"
+    ]
+   },
+   {
+    "label": "Final persecution of the Church",
+    "terms": [
+     "persecution of the church",
+     "church persecuted"
+    ]
+   }
+  ],
+  "specificity": {
+   "score": 4,
+   "rationale": "Names a final pope and a city's destruction, in a fixed sequence."
+  },
+  "evidence": {
+   "score": 1,
+   "rationale": "Unknown before 1595. Mottos for popes before about 1590 are strikingly accurate and later ones are vague, the classic sign of a text composed around 1590."
+  },
+  "contradictions": [],
+  "preconditions": [
+   {
+    "terms": [
+     "pope",
+     "papal",
+     "conclave",
+     "vatican"
+    ],
+    "note": "Only papal events can bear on this prophecy."
+   }
+  ],
+  "parallels": [
+   {
+    "when": "1590",
+    "event": "Conclave after Urban VII; a common theory holds the list was forged to promote a candidate",
+    "note": "Explains the accuracy cliff."
+   },
+   {
+    "when": "2013",
+    "event": "Election of Francis after 'Gloria olivae' (read as Benedict XVI)",
+    "note": "Not named Peter."
+   },
+   {
+    "when": "2025",
+    "event": "Election of Leo XIV (Robert Prevost)",
+    "note": "Also not named Peter."
+   }
+  ],
+  "interpretations": [
+   {
+    "school": "Traditional",
+    "reading": "A genuine 12th-century vision; we are at or near the final pope."
+   },
+   {
+    "school": "Forgery thesis",
+    "reading": "Written around 1590 and backdated; most historians, including Catholic scholars, take this view."
+   },
+   {
+    "school": "Flexible",
+    "reading": "The text never says Petrus Romanus immediately follows 'Gloria olivae'; unnamed popes may intervene."
+   }
+  ],
+  "links": [
+   {
+    "label": "Prophecy of the Popes, Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Prophecy_of_the_Popes"
+   }
+  ]
+ },
+ {
+  "id": "cayce-earth",
+  "title": "Earth Changes, 1958–1998",
+  "tradition": "American trance channeling",
+  "family": "Esoteric",
+  "date": {
+   "label": "Reading given January 1934",
+   "year": 1934
+  },
+  "source": {
+   "work": "Edgar Cayce readings",
+   "locator": "Reading 3976-15 (19 January 1934)",
+   "edition": "Transcripts held by the Edgar Cayce Foundation / A.R.E.; paraphrase by ESCHATON"
+  },
+  "excerpt": {
+   "type": "paraphrase",
+   "text": "The earth will be broken up in the western portion of America; the greater portion of Japan will go into the sea; northern Europe will be changed in the twinkling of an eye; land will appear off the east coast of America. These changes were placed in the period from '58 to '98.",
+   "ref": "Reading 3976-15 (paraphrased)"
+  },
+  "summary": "An unusually specific, dated forecast of geological upheaval, transcribed at the time it was given.",
+  "archetypes": {
+   "earth": 1,
+   "deluge": 0.9,
+   "cataclysm": 0.6,
+   "renewal": 0.3
+  },
+  "keywords": [
+   "earthquake",
+   "pole shift",
+   "Atlantis",
+   "new land",
+   "San Andreas",
+   "Bimini",
+   "Edgar Cayce",
+   "earth changes"
+  ],
+  "markers": [
+   {
+    "label": "Western United States broken up",
+    "terms": [
+     "California",
+     "West Coast",
+     "San Andreas",
+     "Pacific Northwest"
+    ]
+   },
+   {
+    "label": "Most of Japan sinks into the sea",
+    "terms": [
+     "Japan sinks",
+     "Japan",
+     "Honshu"
+    ]
+   },
+   {
+    "label": "Northern Europe changed suddenly",
+    "terms": [
+     "Europe",
+     "Scandinavia"
+    ]
+   },
+   {
+    "label": "New land rises in the Atlantic",
+    "terms": [
+     "new land",
+     "Atlantic",
+     "island emerges"
+    ]
+   }
+  ],
+  "specificity": {
+   "score": 4,
+   "rationale": "Named regions and a stated 40-year window."
+  },
+  "evidence": {
+   "score": 4,
+   "rationale": "Transcribed and dated at the time, so it clearly precedes the outcome. That makes it testable, and the window has closed."
+  },
+  "contradictions": [],
+  "preconditions": [
+   {
+    "terms": [
+     "sinks",
+     "sink",
+     "submerged",
+     "into the sea"
+    ],
+    "note": "An earthquake alone does not meet 'the greater portion of Japan must go into the sea'."
+   }
+  ],
+  "parallels": [
+   {
+    "when": "1968",
+    "event": "'Bimini Road' stones reported off the Bahamas, read by followers as a sign of Atlantis rising",
+    "note": "Geologists describe the formation as natural beachrock."
+   },
+   {
+    "when": "2011",
+    "event": "Tōhoku earthquake and tsunami",
+    "note": "Cited by followers; Japan did not sink and the event fell outside the window."
+   }
+  ],
+  "interpretations": [
+   {
+    "school": "A.R.E. revisionist",
+    "reading": "Timelines were conditional; the changes may be gradual or symbolic."
+   },
+   {
+    "school": "Literal",
+    "reading": "A specific forecast for 1958–1998 that did not occur."
+   },
+   {
+    "school": "Skeptical",
+    "reading": "A clear example of a dated prediction that can be scored, and failed."
+   }
+  ],
+  "links": [
+   {
+    "label": "Edgar Cayce, Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Edgar_Cayce"
+   }
+  ]
+ },
+ {
+  "id": "shipton-1881",
+  "title": "The World Shall End in 1881",
+  "tradition": "English folk prophecy (forged)",
+  "family": "Esoteric",
+  "date": {
+   "label": "Written 1862 (attributed to 'Mother Shipton', 16th c.)",
+   "year": 1862
+  },
+  "source": {
+   "work": "Charles Hindley's reprint of a Mother Shipton chapbook",
+   "locator": "Published 1862; forgery confessed in Notes and Queries, 26 April 1873",
+   "edition": "Public domain"
+  },
+  "excerpt": {
+   "type": "quotation",
+   "text": "The world to an end shall come / In eighteen hundred and eighty-one.",
+   "ref": "Hindley, 1862"
+  },
+  "summary": "Verses passed off as a Tudor prophecy that seemed to foresee railways and the telegraph, because they were written after those inventions. The author confessed in 1873.",
+  "archetypes": {
+   "deception": 1,
+   "cataclysm": 0.6,
+   "machine": 0.5,
+   "network": 0.5,
+   "cycle": 0.4
+  },
+  "keywords": [
+   "Mother Shipton",
+   "1881",
+   "carriages without horses",
+   "end of the world"
+  ],
+  "markers": [
+   {
+    "label": "End of the world in 1881",
+    "terms": [
+     "1881"
+    ]
+   }
+  ],
+  "specificity": {
+   "score": 5,
+   "rationale": "An exact year."
+  },
+  "evidence": {
+   "score": 1,
+   "rationale": "A documented forgery: the author admitted writing the verses after the inventions they 'predict'."
+  },
+  "contradictions": [],
+  "preconditions": [],
+  "parallels": [
+   {
+    "when": "1880–1881",
+    "event": "Popular alarm in rural England as 1881 approached",
+    "note": "Newspapers across the Empire debunked it at the time."
+   }
+  ],
+  "interpretations": [
+   {
+    "school": "Folk legend",
+    "reading": "Mother Shipton as a Yorkshire seeress."
+   },
+   {
+    "school": "Documented forgery",
+    "reading": "Hindley invented the verses in 1862 to sell books and confessed in 1873."
+   }
+  ],
+  "links": [
+   {
+    "label": "Mother Shipton, Dictionary of National Biography (Wikisource)",
+    "url": "https://en.wikisource.org/wiki/Shipton,_Mother_(DNB00)"
+   }
+  ]
+ },
+ {
+  "id": "kurzweil",
+  "title": "Human-Level AI by 2029, the Singularity by 2045",
+  "tradition": "Transhumanism",
+  "family": "Futurist",
+  "date": {
+   "label": "2005 (reaffirmed 2024)",
+   "year": 2005
+  },
+  "source": {
+   "work": "Ray Kurzweil, The Singularity Is Near (2005); The Singularity Is Nearer (2024)",
+   "locator": "Dated forecasts for 2029 and 2045",
+   "edition": "Viking; paraphrase by ESCHATON"
+  },
+  "excerpt": {
+   "type": "paraphrase",
+   "text": "Machines will pass a valid Turing test and reach human-level intelligence by 2029. By 2045 humans will merge with non-biological intelligence, multiplying effective intelligence about a billion-fold: the Singularity.",
+   "ref": "Kurzweil, 2005 and 2024 (paraphrased)"
+  },
+  "summary": "A dated, exponential-trend forecast of human-level machine intelligence and human–machine merger.",
+  "archetypes": {
+   "machine": 1,
+   "network": 0.6,
+   "renewal": 0.6,
+   "redeemer": 0.4,
+   "gnosis": 0.3,
+   "cycle": 0.3
+  },
+  "keywords": [
+   "ai",
+   "artificial intelligence",
+   "agi",
+   "artificial general intelligence",
+   "turing test",
+   "singularity",
+   "nanobots",
+   "exponential",
+   "brain-computer",
+   "brain computer interface",
+   "superintelligence",
+   "human-level"
+  ],
+  "markers": [
+   {
+    "label": "Rigorous Turing test passed",
+    "terms": [
+     "Turing test"
+    ]
+   },
+   {
+    "label": "Human-level general AI",
+    "terms": [
+     "agi",
+     "human-level",
+     "general intelligence",
+     "surpasses humans"
+    ]
+   },
+   {
+    "label": "Brain–computer merging",
+    "terms": [
+     "brain-computer",
+     "neural interface",
+     "brain implant",
+     "Neuralink"
+    ]
+   },
+   {
+    "label": "Target years 2029 / 2045",
+    "terms": [
+     "2029",
+     "2045"
+    ]
+   }
+  ],
+  "specificity": {
+   "score": 4,
+   "rationale": "Named capabilities with target years; the definitions of 'human-level' are disputed."
+  },
+  "evidence": {
+   "score": 5,
+   "rationale": "Published, dated and on the record before the outcome."
+  },
+  "contradictions": [
+   {
+    "terms": [
+     "ai winter",
+     "plateau",
+     "stalled",
+     "scaling wall",
+     "progress slows"
+    ],
+    "note": "The forecast rests on sustained exponential progress; a reported plateau cuts against it."
+   }
+  ],
+  "preconditions": [],
+  "parallels": [
+   {
+    "when": "2002",
+    "event": "Kurzweil–Kapor Long Bet: will a machine pass a strict Turing test by 2029?",
+    "note": "A formal, adjudicated wager; see the ledger."
+   },
+   {
+    "when": "1999",
+    "event": "The Age of Spiritual Machines makes predictions for 2009 and 2019",
+    "note": "Kurzweil's self-assessed accuracy is disputed by critics."
+   }
+  ],
+  "interpretations": [
+   {
+    "school": "Techno-optimist",
+    "reading": "Trend lines in computing are reliable enough to set dates."
+   },
+   {
+    "school": "Skeptical",
+    "reading": "Capability definitions shift; benchmarks are not general intelligence."
+   },
+   {
+    "school": "Religious-structural",
+    "reading": "Critics compare it to rapture narratives ('the rapture of the nerds', a phrase from Ken MacLeod's fiction)."
+   }
+  ],
+  "links": [
+   {
+    "label": "The Singularity Is Near, Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/The_Singularity_Is_Near"
+   }
+  ]
+ },
+ {
+  "id": "ij-good",
+  "title": "The Intelligence Explosion",
+  "tradition": "Computer science / statistics",
+  "family": "Futurist",
+  "date": {
+   "label": "1965 (published 1966)",
+   "year": 1965
+  },
+  "source": {
+   "work": "I. J. Good, 'Speculations Concerning the First Ultraintelligent Machine'",
+   "locator": "Advances in Computers, vol. 6",
+   "edition": "Academic Press"
+  },
+  "excerpt": {
+   "type": "quotation",
+   "text": "…the first ultraintelligent machine is the last invention that man need ever make…",
+   "ref": "Good, 1965. He adds the condition that the machine be docile enough to tell us how to keep it under control."
+  },
+  "summary": "A machine that designs better machines would trigger an 'intelligence explosion'. Good thought it more probable than not that one would be built within the twentieth century.",
+  "archetypes": {
+   "machine": 1,
+   "tyrant": 0.3,
+   "renewal": 0.4,
+   "cataclysm": 0.3
+  },
+  "keywords": [
+   "ultraintelligent",
+   "intelligence explosion",
+   "recursive self-improvement",
+   "self-improving",
+   "superintelligence",
+   "ai designs ai",
+   "last invention"
+  ],
+  "markers": [
+   {
+    "label": "Machines designing better machines",
+    "terms": [
+     "self-improving",
+     "recursive",
+     "ai designs ai",
+     "automated ai research"
+    ]
+   },
+   {
+    "label": "Intelligence explosion",
+    "terms": [
+     "intelligence explosion",
+     "superintelligence",
+     "takeoff"
+    ]
+   },
+   {
+    "label": "Control problem",
+    "terms": [
+     "alignment",
+     "control",
+     "shutdown",
+     "safety"
+    ]
+   }
+  ],
+  "specificity": {
+   "score": 3,
+   "rationale": "Clear mechanism and condition; the timing estimate was loose."
+  },
+  "evidence": {
+   "score": 5,
+   "rationale": "Peer-reviewed publication with a stated date."
+  },
+  "contradictions": [],
+  "preconditions": [
+   {
+    "terms": [
+     "self-improving",
+     "recursive",
+     "designs",
+     "superintelligence"
+    ],
+    "note": "The explosion requires machines that improve their own design."
+   }
+  ],
+  "parallels": [
+   {
+    "when": "1951",
+    "event": "Alan Turing's lecture suggesting machines might eventually take control",
+    "note": "An earlier version of the idea."
+   },
+   {
+    "when": "2000s–2020s",
+    "event": "Emergence of AI alignment and safety research",
+    "note": "Builds directly on Good's framing."
+   }
+  ],
+  "interpretations": [
+   {
+    "school": "Existential-risk",
+    "reading": "The control condition is the crux; an uncontrolled explosion could be catastrophic."
+   },
+   {
+    "school": "Optimist",
+    "reading": "The last invention because machines then solve everything else."
+   },
+   {
+    "school": "Skeptical",
+    "reading": "Intelligence may not scale recursively; bottlenecks are physical and social."
+   }
+  ],
+  "links": [
+   {
+    "label": "Technological singularity, Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Technological_singularity"
+   }
+  ]
+ },
+ {
+  "id": "limits-growth",
+  "title": "Overshoot and Collapse",
+  "tradition": "Systems dynamics (Club of Rome)",
+  "family": "Futurist",
+  "date": {
+   "label": "1972",
+   "year": 1972
+  },
+  "source": {
+   "work": "Meadows, Meadows, Randers & Behrens, The Limits to Growth",
+   "locator": "World3 'standard run' scenario",
+   "edition": "Universe Books, 1972; paraphrase by ESCHATON"
+  },
+  "excerpt": {
+   "type": "paraphrase",
+   "text": "If growth in population, industrialization, pollution, food production and resource use continues unchanged, the limits to growth will be reached within the next hundred years, most probably followed by a sudden and uncontrollable decline in population and industrial capacity. Other scenarios reach a stable equilibrium.",
+   "ref": "The Limits to Growth, 1972 (paraphrased)"
+  },
+  "summary": "Computer scenarios, not point forecasts: under business as usual, industrial output and food per person peak and fall in the 21st century.",
+  "archetypes": {
+   "ecology": 1,
+   "population": 0.8,
+   "famine": 0.6,
+   "wealth": 0.5,
+   "decline": 0.3
+  },
+  "keywords": [
+   "overshoot",
+   "resource depletion",
+   "industrial output",
+   "pollution",
+   "limits to growth",
+   "World3",
+   "peak oil",
+   "degrowth",
+   "food per capita"
+  ],
+  "markers": [
+   {
+    "label": "Industrial output per person peaks and falls",
+    "terms": [
+     "industrial output",
+     "industrial production falls",
+     "deindustrialization",
+     "degrowth"
+    ]
+   },
+   {
+    "label": "Resource depletion",
+    "terms": [
+     "depletion",
+     "peak oil",
+     "resource shortage",
+     "mineral shortage"
+    ]
+   },
+   {
+    "label": "Pollution surges",
+    "terms": [
+     "pollution",
+     "emissions"
+    ]
+   },
+   {
+    "label": "Food per person declines",
+    "terms": [
+     "food per capita",
+     "food production falls"
+    ]
+   }
+  ],
+  "specificity": {
+   "score": 3,
+   "rationale": "Quantified scenario curves, but explicitly conditional rather than a single prediction."
+  },
+  "evidence": {
+   "score": 5,
+   "rationale": "Published model with stated assumptions, compared to observed data by later researchers."
+  },
+  "conditional": true,
+  "contradictions": [],
+  "preconditions": [],
+  "parallels": [
+   {
+    "when": "1973",
+    "event": "First oil crisis",
+    "note": "Boosted the book's influence."
+   },
+   {
+    "when": "2008",
+    "event": "Graham Turner (CSIRO) compares 30 years of data to the scenarios",
+    "note": "Found data tracking close to the standard run."
+   },
+   {
+    "when": "2021",
+    "event": "Gaya Herrington, Journal of Industrial Ecology, updates the comparison",
+    "note": "Data aligned most closely with business-as-usual and 'comprehensive technology' scenarios."
+   }
+  ],
+  "interpretations": [
+   {
+    "school": "Modelers",
+    "reading": "Scenarios to inform choices, not a forecast of doom."
+   },
+   {
+    "school": "Economist critics",
+    "reading": "Underrates price signals, substitution and technology."
+   },
+   {
+    "school": "Data-comparison",
+    "reading": "Observed data so far tracks business as usual; the decisive decades are ahead."
+   }
+  ],
+  "links": [
+   {
+    "label": "The Limits to Growth, Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/The_Limits_to_Growth"
+   }
+  ]
+ },
+ {
+  "id": "ehrlich",
+  "title": "The Population Bomb",
+  "tradition": "Neo-Malthusian ecology",
+  "family": "Futurist",
+  "date": {
+   "label": "1968",
+   "year": 1968
+  },
+  "source": {
+   "work": "Paul R. Ehrlich, The Population Bomb",
+   "locator": "Prologue",
+   "edition": "Ballantine Books, 1968"
+  },
+  "excerpt": {
+   "type": "quotation",
+   "text": "In the 1970s hundreds of millions of people will starve to death…",
+   "ref": "The Population Bomb, prologue (1968)"
+  },
+  "summary": "A dated prediction of mass famine in the 1970s driven by population growth outpacing food.",
+  "archetypes": {
+   "famine": 1,
+   "population": 1,
+   "ecology": 0.7,
+   "war": 0.3
+  },
+  "keywords": [
+   "population bomb",
+   "overpopulation",
+   "starvation",
+   "starve",
+   "famine",
+   "mass starvation",
+   "population growth",
+   "birth rate",
+   "Malthus",
+   "Malthusian"
+  ],
+  "markers": [
+   {
+    "label": "Hundreds of millions starve",
+    "terms": [
+     "mass starvation",
+     "famine deaths",
+     "millions starve"
+    ]
+   },
+   {
+    "label": "Population outpaces food",
+    "terms": [
+     "overpopulation",
+     "population growth",
+     "food supply"
+    ]
+   }
+  ],
+  "specificity": {
+   "score": 5,
+   "rationale": "A scale (hundreds of millions) and a decade."
+  },
+  "evidence": {
+   "score": 5,
+   "rationale": "Mass-market book, dated and on the record."
+  },
+  "contradictions": [
+   {
+    "terms": [
+     "record harvest",
+     "bumper crop",
+     "food surplus",
+     "famine deaths fall"
+    ],
+    "note": "Rising food output directly contradicts the forecast's mechanism."
+   }
+  ],
+  "preconditions": [],
+  "parallels": [
+   {
+    "when": "1960s–1970s",
+    "event": "Green Revolution high-yield crops (Norman Borlaug, Nobel Peace Prize 1970)",
+    "note": "The main reason the forecast failed."
+   },
+   {
+    "when": "1980–1990",
+    "event": "Simon–Ehrlich wager on five metal prices",
+    "note": "Ehrlich lost; see the ledger."
+   }
+  ],
+  "interpretations": [
+   {
+    "school": "Ehrlich's defense",
+    "reading": "The warning spurred action; the timing was wrong, not the direction."
+   },
+   {
+    "school": "Critics",
+    "reading": "A textbook failed prediction that ignored innovation."
+   },
+   {
+    "school": "Malthusian lineage",
+    "reading": "Continues Malthus's 1798 argument about population and food."
+   }
+  ],
+  "links": [
+   {
+    "label": "The Population Bomb, Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/The_Population_Bomb"
+   }
+  ]
+ },
+ {
+  "id": "tesla-1926",
+  "title": "The Earth as a Huge Brain",
+  "tradition": "Engineering futurism",
+  "family": "Futurist",
+  "date": {
+   "label": "30 January 1926",
+   "year": 1926
+  },
+  "source": {
+   "work": "Nikola Tesla, interviewed by John B. Kennedy, 'When Woman Is Boss'",
+   "locator": "Collier's, 30 January 1926",
+   "edition": "Public domain"
+  },
+  "excerpt": {
+   "type": "quotation",
+   "text": "When wireless is perfectly applied the whole earth will be converted into a huge brain… and the instruments through which we shall be able to do this will be amazingly simple compared with our present telephone. A man will be able to carry one in his vest pocket.",
+   "ref": "Collier's, 1926"
+  },
+  "summary": "A forecast of instant worldwide communication through pocket-sized wireless devices, including seeing and hearing across distance.",
+  "archetypes": {
+   "network": 1,
+   "machine": 0.7,
+   "inversion": 0.4
+  },
+  "keywords": [
+   "wireless",
+   "pocket",
+   "smartphone",
+   "smartphones",
+   "telephone",
+   "global brain",
+   "video call",
+   "handheld device"
+  ],
+  "markers": [
+   {
+    "label": "Pocket-sized wireless device",
+    "terms": [
+     "smartphone",
+     "pocket",
+     "mobile phone",
+     "handheld"
+    ]
+   },
+   {
+    "label": "Instant worldwide communication",
+    "terms": [
+     "internet",
+     "global network",
+     "instant messaging",
+     "video call"
+    ]
+   },
+   {
+    "label": "Seeing and hearing across distance",
+    "terms": [
+     "video",
+     "livestream",
+     "video call"
+    ]
+   }
+  ],
+  "specificity": {
+   "score": 3,
+   "rationale": "Concrete device and capability, no date."
+  },
+  "evidence": {
+   "score": 5,
+   "rationale": "Dated magazine interview; it predates the technology it describes."
+  },
+  "contradictions": [],
+  "preconditions": [],
+  "parallels": [
+   {
+    "when": "1990s",
+    "event": "Public internet and mobile phones",
+    "note": "Partial realization."
+   },
+   {
+    "when": "2007",
+    "event": "Smartphones become mainstream",
+    "note": "Often cited as fulfilment."
+   }
+  ],
+  "interpretations": [
+   {
+    "school": "Visionary",
+    "reading": "An early, accurate picture of the networked smartphone era."
+   },
+   {
+    "school": "Skeptical",
+    "reading": "An extrapolation from radio and telephony trends; Tesla's many unrealized predictions are rarely cited."
+   }
+  ],
+  "links": [
+   {
+    "label": "Nikola Tesla, Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Nikola_Tesla"
+   }
+  ]
+ }
+]
