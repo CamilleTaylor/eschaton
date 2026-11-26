@@ -1,0 +1,56 @@
+name: Register a prediction
+description: Record a prediction publicly before its outcome is known. It gets a timestamp, a SHA-256 hash, and a Bitcoin-anchored OpenTimestamps proof.
+title: "Prediction: "
+labels: ["prediction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A bot adds this to `data/registry.json` within a few minutes and replies with its hash. Registered predictions can't be edited; outcomes are added later as separate entries.
+        Be specific: "a major war" can't be scored, but "Russia and NATO exchange direct fire before 2027-12-31, as reported by Reuters or AP" can.
+  - type: textarea
+    id: claim
+    attributes:
+      label: Prediction
+      description: What will happen?
+    validations:
+      required: true
+  - type: textarea
+    id: criteria
+    attributes:
+      label: How it resolves
+      description: The measurable test. Who or what decides whether it happened?
+    validations:
+      required: true
+  - type: input
+    id: resolveBy
+    attributes:
+      label: Resolve by
+      description: Deadline, written YYYY-MM-DD. It must be in the future.
+      placeholder: "2027-12-31"
+    validations:
+      required: true
+  - type: input
+    id: probability
+    attributes:
+      label: Probability (0-100)
+      description: How likely do you think it is? Needed for a Brier score.
+      placeholder: "30"
+  - type: input
+    id: baseRate
+    attributes:
+      label: Base rate (0-100, optional)
+      description: How often does this kind of thing happen in a comparable period? Lets your forecast be compared with simply guessing the base rate.
+  - type: textarea
+    id: invalidation
+    attributes:
+      label: What would prove it wrong
+  - type: input
+    id: prophecy
+    attributes:
+      label: Related prophecy (optional)
+      description: The ESCHATON prophecy id, if any (for example hopi-blue-star).
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Reasoning or sources (optional)
