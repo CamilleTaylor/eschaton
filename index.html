@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ESCHATON · Prophecy Alignment Engine</title>
+<meta name="description" content="Compare a contemporary event with 30 sourced prophecies from seven traditions, keeping symbolic resemblance separate from predictive evidence.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="sky" aria-hidden="true"></canvas>
+<svg class="geo-bg" aria-hidden="true" viewBox="-300 -300 600 600" preserveAspectRatio="xMidYMid slice">
+  <g fill="none" stroke="currentColor" stroke-width="0.6">
+    <circle r="60"/><circle r="60" cx="60"/><circle r="60" cx="-60"/><circle r="60" cx="30" cy="52"/><circle r="60" cx="-30" cy="52"/><circle r="60" cx="30" cy="-52"/><circle r="60" cx="-30" cy="-52"/>
+    <circle r="60" cx="90" cy="52"/><circle r="60" cx="-90" cy="52"/><circle r="60" cx="90" cy="-52"/><circle r="60" cx="-90" cy="-52"/><circle r="60" cy="104"/><circle r="60" cy="-104"/>
+    <circle r="180"/><circle r="240"/><circle r="290"/>
+  </g>
+</svg>
+
+<header class="top">
+  <a class="brand" href="#index" aria-label="ESCHATON home"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14"/><path d="M16 2 28.1 23H3.9Z M16 30 3.9 9h24.2Z"/><circle cx="16" cy="16" r="3"/></svg><span>ESCHATON</span></a>
+  <nav class="tabs" aria-label="Sections">
+    <a href="#index" data-view="index">This week</a>
+    <a href="#align" data-view="align">Check an event</a>
+    <a href="#library" data-view="library">Prophecies</a>
+    <a href="#ledger" data-view="ledger">Predictions</a>
+    <a href="#network" data-view="network">Map</a>
+    <a href="#method" data-view="method">How it works</a>
+  </nav>
+</header>
+
+<main>
+  <!-- INDEX (flagship) -->
+  <section class="view" id="v-index" aria-labelledby="h-index">
+    <div class="band hero ix-hero">
+      <div class="hero-title">
+        <p class="kicker">Is this week's news unusual, measured against prophecy?</p>
+        <div id="ix-answer" class="answer"><h1 id="h-index">Reading the week…</h1></div>
+        <p class="lede" id="ix-lede">Loading ten years of news.</p>
+        <div class="ix-nav">
+          <button type="button" class="btn ghost" id="ix-prev" aria-label="Previous day">‹</button>
+          <label class="sr" for="ix-day">Week ending</label>
+          <select id="ix-day"></select>
+          <button type="button" class="btn ghost" id="ix-next" aria-label="Next day">›</button>
+        </div>
+      </div>
+      <figure class="astro-wrap" aria-label="Theme wheel for the selected week">
+        <svg id="rose" viewBox="0 0 400 400" role="img" aria-label="How far above or below normal each theme is this week"></svg>
+        <figcaption class="rose-cap">Each petal is a theme. The longer it is, the more unusual this week is for that theme. Bright petals are running high.</figcaption>
+      </figure>
+      <div class="ix-stats" id="ix-stats"></div>
+      <p class="month-check" id="ix-month"></p>
+    </div>
+
+    <div class="band steps-band">
+      <ol class="steps" aria-label="How it works">
+        <li><b>1. Read the news</b><span>Every item in Wikipedia's daily news log since 2016: about 61,000 so far, roughly 15 a day.</span></li>
+        <li><b>2. Tag the themes</b><span>Each item is checked for 23 themes that prophecies talk about: war, disease, AI, floods and more.</span></li>
+        <li><b>3. Compare with normal</b><span>This week is compared with every separate week from 2016 to 2025, and this month with every month, so "high" means high for real.</span></li>
+      </ol>
+    </div>
+
+    <div class="band" id="ix-body">
+      <div class="ix-grid">
+        <div>
+          <h2>Themes this week</h2>
+          <p class="meta" id="ix-arch-note"></p>
+          <div class="ix-arch" id="ix-arch"></div>
+          <button type="button" class="btn ghost small-btn" id="ix-arch-more">Show all themes</button>
+        </div>
+        <div>
+          <h2>Is this year more prophecy-like than others?</h2>
+          <p class="meta">Share of news items that match at least one prophecy (match strength 20 or more), by year. Same rules every year.</p>
+          <div class="fig years-fig"><svg id="ix-years" role="img" aria-label="Share of news items matching a prophecy, per year"></svg></div>
+          <p id="ix-years-note"></p>
+        </div>
+      </div>
+
+      <section class="patterns" aria-labelledby="h-pat">
+        <h2 id="h-pat" style="margin-top:40px">Rising, perennial, or does it just feel new?</h2>
+        <p class="lede" id="pat-lede"></p>
+        <div class="pat-grid" id="pat-grid"></div>
+        <p class="meta pat-foot">Each line shows a theme's share of the year's news, '16 to '26 (2026 through the last full month). "Rising" needs a steady climb across years, so one dramatic year is not enough. Wikipedia's editors and our word lists shape these numbers too; see <a href="#method">How it works</a>.</p>
+        <div id="longview" hidden>
+          <h3>The long view</h3>
+          <p class="meta" id="lv-note"></p>
+          <div class="scroll"><table class="lv-table" id="lv-table"></table></div>
+        </div>
+      </section>
+
+      <h2 style="margin-top:40px">Ten years at a glance</h2>
+      <p class="meta">One row per theme, one column per month. Brighter means that month had more of the theme than usual. Hover or tap for numbers.</p>
+      <div class="legend" aria-hidden="true"><span>Lower than usual</span><i style="background:#191242"></i><i style="background:#33237d"></i><i style="background:#5b3fd6"></i><i style="background:#8f73ff"></i><i style="background:#cdbaff"></i><i style="background:#8ef0ff"></i><span>Rare high</span></div>
+      <div class="fig heat-fig" id="heat-wrap"><svg id="heat" role="img" aria-label="Monthly theme heatmap from 2016 to now"></svg><div class="g-tip" id="heat-tip" hidden></div></div>
+
+      <h2 style="margin-top:40px">News that matches a prophecy</h2>
+      <p class="notice"><strong>A match is not a fulfilment.</strong> Finding a resemblance after the fact tells us how we read the news, not that anyone foresaw it.</p>
+      <div id="ix-hl" class="ix-hl"></div>
+      <p class="src-line" id="ix-source"></p>
+    </div>
+  </section>
+
+  <!-- ALIGN -->
+  <section class="view" id="v-align" aria-labelledby="h-align" hidden>
+    <div class="band hero">
+      <div class="hero-title">
+        <p class="kicker">Check an event</p>
+        <h1 id="h-align">Does this event match a prophecy?</h1>
+        <p class="lede">Describe something in a sentence or two. ESCHATON checks it against 30 prophecies from seven traditions and tells you plainly whether anything really lines up, or only looks similar.</p>
+      </div>
+      <figure class="astro-wrap" aria-label="Theme wheel">
+        <svg id="astro" viewBox="0 0 400 400" role="img" aria-label="Themes found in the event"></svg>
+      </figure>
+      <form id="align-form" class="align-form" autocomplete="off">
+        <label for="event">What happened? <span class="hint">(several events? one per line)</span></label>
+        <textarea id="event" rows="3" maxlength="1200" placeholder="e.g. Drought and upstream dams push the Euphrates to record low water levels" required></textarea>
+        <div class="form-row">
+          <button type="submit" class="btn primary">Check it</button>
+          <span class="hint">Matching runs in your browser. Nothing is sent anywhere.</span>
+        </div>
+        <div class="examples" id="examples" aria-label="Example events"></div>
+      </form>
+    </div>
+
+    <div class="band results-band" id="results-band" hidden>
+      <div class="reading" id="reading"></div>
+      <div class="res-head">
+        <h2 id="res-title">Matches</h2>
+        <div class="seg" role="group" aria-label="Rank results by">
+          <button type="button" data-sort="predictive" aria-pressed="true">Strongest match</button>
+          <button type="button" data-sort="symbolic" aria-pressed="false">Most theme overlap</button>
+        </div>
+      </div>
+      <p class="notice" id="retro-notice"><strong>A match is not a prediction.</strong> Anything that already happened can be made to resemble an old text. Only a claim written down <em>before</em> the outcome can show foresight, which is what the Predictions page is for.</p>
+      <div id="results" class="results"></div>
+      <button type="button" class="btn ghost" id="more-results" hidden>Show more</button>
+    </div>
+  </section>
+
+  <!-- LIBRARY -->
+  <section class="view" id="v-library" aria-labelledby="h-library" hidden>
+    <div class="band">
+      <h1 id="h-library">The 30 prophecies</h1>
+      <p class="lede">Each one with its source, date, how it has been read over time, and how much we trust it. Tap a title to read it.</p>
+      <div class="lib-controls">
+        <label class="search"><span class="sr">Search prophecies</span><input id="lib-q" type="search" placeholder="Search title, tradition, keyword"></label>
+        <div class="chips" id="lib-fams" role="group" aria-label="Filter by tradition family"></div>
+      </div>
+      <div class="lib-grid" id="lib-grid"></div>
+    </div>
+  </section>
+
+  <!-- LEDGER -->
+  <section class="view" id="v-ledger" aria-labelledby="h-ledger" hidden>
+    <div class="band">
+      <h1 id="h-ledger">Predictions</h1>
+      <p class="lede">The only fair test of foresight: write a prediction down <em>before</em> it happens, say what would prove it wrong, set a date, and score it afterwards. This page does that three ways.</p>
+      <nav class="pred-nav" aria-label="Sections"><a href="#" data-jump="fc">Monthly forecasts</a><a href="#" data-jump="pub">Public register</a><a href="#" data-jump="hist">Famous predictions &amp; your drafts</a></nav>
+
+      <section id="fc" class="pred-sec" aria-labelledby="h-fc">
+        <h2 id="h-fc">1. ESCHATON forecasts its own index</h2>
+        <p class="meta" id="fc-lede"></p>
+        <div class="chain" id="fc-chain" role="status"></div>
+        <div id="fc-batch"></div>
+        <h3>Does it work? Tested on months it had never seen</h3>
+        <div id="fc-score"></div>
+      </section>
+
+      <section id="pub" class="pred-sec" aria-labelledby="h-pub">
+        <h2 id="h-pub">2. Public register</h2>
+        <p class="meta" id="pub-lede"></p>
+        <div id="pub-list" class="ledger-list"></div>
+      </section>
+
+      <section id="hist" class="pred-sec" aria-labelledby="h-hist">
+        <h2 id="h-hist">3. Famous predictions and your drafts</h2>
+        <p class="meta">Historical prophecy claims and how they turned out, plus drafts you write here. Drafts stay in this browser with a timestamp and a fingerprint (SHA-256). That proves nothing to anyone else, so register the ones that matter publicly.</p>
+      <div class="stats" id="ledger-stats"></div>
+      <div class="ledger-tools">
+        <div class="seg" role="group" aria-label="Filter by status" id="ledger-filter"></div>
+        <div class="tool-btns">
+          <button type="button" class="btn ghost" id="led-copy">Copy JSON</button>
+          <button type="button" class="btn ghost" id="led-dl">Download JSON</button>
+          <label class="btn ghost file"><input type="file" id="led-import" accept="application/json,.json">Import</label>
+        </div>
+      </div>
+      <p class="tool-msg" id="led-msg" role="status"></p>
+
+      <details class="add" id="add-wrap">
+        <summary id="add-sum">Write a draft prediction</summary>
+        <form id="add-form" class="add-form">
+          <label class="wide">The prediction <textarea name="claim" rows="2" required placeholder="What exactly will happen?"></textarea></label>
+          <label class="wide">How we will know <textarea name="criteria" rows="2" required placeholder="What would prove it right, and what would prove it wrong?"></textarea></label>
+          <label>Made by <input name="madeBy" required placeholder="Person, text or group"></label>
+          <label>Written on <input name="madeOn" type="date" required></label>
+          <label>Check by <input name="resolveBy" type="date" required></label>
+          <label>Your probability (0–100) <input name="probability" type="number" min="0" max="100" step="1" placeholder="Optional"></label>
+          <label>Related prophecy <select name="prophecy" id="add-prophecy"></select></label>
+          <label class="wide">Notes or evidence <textarea name="evidence" rows="2" placeholder="Optional"></textarea></label>
+          <div class="wide form-row"><button class="btn primary" type="submit" id="add-submit">Save draft</button><button class="btn ghost" type="button" id="add-cancel" hidden>Cancel editing</button><span class="hint">Saved in this browser. A prediction with no date can never be wrong, so a date is required. A probability lets it be scored.</span></div>
+        </form>
+      </details>
+      <div id="ledger-list" class="ledger-list"></div>
+      </section>
+    </div>
+  </section>
+
+  <!-- NETWORK -->
+  <section class="view" id="v-network" aria-labelledby="h-network" hidden>
+    <div class="band">
+      <h1 id="h-network">Map of themes and prophecies</h1>
+      <p class="lede">Themes sit on the outer ring. Each prophecy is pulled toward the themes it talks about, so similar prophecies from different traditions end up near each other. Tap anything to trace its links.</p>
+      <div class="chips" id="net-fams" role="group" aria-label="Show or hide tradition families"></div>
+      <div class="net-layout">
+        <div class="fig net-fig" id="net"></div>
+        <aside class="net-side" id="net-side" aria-live="polite"></aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- METHOD -->
+  <section class="view" id="v-method" aria-labelledby="h-method" hidden>
+    <div class="band prose">
+      <h1 id="h-method">How it works</h1>
+      <div class="plain">
+        <h2>In plain English</h2>
+        <ul>
+          <li><strong>This week</strong> reads Wikipedia's daily news log, tags each item with themes found in prophecies, and asks whether this week has more of those themes than a normal week since 2016.</li>
+          <li><strong>Check an event</strong> compares something you describe with 30 prophecies. <em>Match strength</em> (0–100) is high only when the event shares themes <em>and</em> concrete details with a well-sourced text.</li>
+          <li><strong>A match is never proof.</strong> Old texts can be made to fit almost anything after the fact. Only predictions written down in advance can test foresight; that is what the Predictions page tracks, including monthly forecasts the index makes about itself, scored after the fact.</li>
+          <li>Nothing here uses AI or sends your text anywhere. It is a fixed set of rules you can read below and argue with.</li>
+        </ul>
+      </div>
+      <p class="lede">The details: every number comes from a fixed formula. None is a probability, and none says a prophecy is true.</p>
+
+      <h2>Two questions, kept apart</h2>
+      <p><strong>Theme overlap</strong> asks: does this event look like what the text describes? Almost any war resembles the Four Horsemen. That is worth knowing, and it says nothing about foresight.</p>
+      <p><strong>Match strength</strong> asks: does the event line up with the text's concrete details, from a source we can trust? It measures resemblance, not predictive power, which is why it is not called a prediction score.</p>
+
+      <h2>The formulas</h2>
+      <div class="scroll"><table class="formula">
+        <thead><tr><th>Component</th><th>Range</th><th>How it is computed</th></tr></thead>
+        <tbody>
+          <tr><td>Negation scope</td><td>per clause</td><td>Your text is split into clauses. Words after a negation or denial cue (no, not, never, without, deny, reject, rule out…) and words before a dismissal (…is false, …was debunked) are set aside and never count toward a match. Emphatic forms such as "not only" and "never before" are not treated as negation.</td></tr>
+          <tr><td>Event themes</td><td>0–1 each</td><td>The remaining words are normalized and stemmed, then matched against 23 theme word lists. Each theme's strength is 1 − e<sup>−0.9·hits</sup>, counting each distinct term once.</td></tr>
+          <tr><td>Theme overlap (T)</td><td>0–100</td><td>100 × (0.65 × cosine similarity between the event's themes and the prophecy's theme weights + 0.35 × min(1, prophecy keywords found ÷ 3)).</td></tr>
+          <tr><td>Concrete details (S)</td><td>0–100</td><td>20 × the prophecy's specificity rating (1–5) × (0.15 + 0.85 × share of its concrete markers found in your text). This measures how specifically the event matches the text: a precise prophecy matched only by theme scores low, and a vague text can never score high.</td></tr>
+          <tr><td>Source strength (E)</td><td>20–100</td><td>20 × the prophecy's evidence rating (1–5). Fixed per prophecy; see the rubric.</td></tr>
+          <tr><td>Points against (P)</td><td>0–45</td><td>15 for each contradiction triggered by your text, plus 6 for each stated precondition your text does not mention. Capped at 45.</td></tr>
+          <tr><td>Match strength</td><td>0–100</td><td>(T ÷ 100) × √(S × E) − P, floored at 0.</td></tr>
+        </tbody>
+      </table></div>
+      <p>Verdicts: theme overlap under 20 is <em>no real match</em>; match strength under 20 is a <em>loose resemblance</em>; 20–39 is <em>some overlap</em>; 40 or more is a <em>close match</em>. Even a close match is found after the fact, never a fulfilment.</p>
+
+      <h2>The weekly theme index</h2>
+      <p>The index reads Wikipedia's <a href="https://en.wikipedia.org/wiki/Portal:Current_events" target="_blank" rel="noopener">Current Events portal</a>, a volunteer-edited daily log of world news. Each bullet is one item, scored <em>on its own</em> with its topic line as context. Items are never merged into one block of text, so a long day cannot inflate a score.</p>
+      <ul>
+        <li><strong>Share:</strong> for each theme, the fraction of a period's items that carry it. Shares, not counts, so busier editing years do not look more apocalyptic.</li>
+        <li><strong>Week:</strong> the seven days ending on the selected date, pooled. Single days are too noisy with 15–40 items.</li>
+        <li><strong>Baseline:</strong> separate, non-overlapping calendar weeks from 1 January 2016 (or an earlier start date, if the history has been extended) to 31 December 2025, so no news day is counted twice. A percentile of 95 means 95% of baseline weeks had a lower share. (Until the first full rebuild after this change, the shipped data still uses overlapping weeks; the page says so when that is the case.)</li>
+        <li><strong>Running high:</strong> above that theme's own 90th percentile <em>and</em> carried by at least two news items that week. The two-item rule stops near-silent themes, where a normal week has none, from being tipped over by a single item. With 23 themes, two or three run high in a typical week by chance, so one high theme means little.</li>
+        <li><strong>Themes running high at once:</strong> ranked against the same count in real baseline weeks. This, not any single theme, is what makes a week unusual. Weeks next to each other are still related (a war lasts more than a week), so a rare count may come from a single long cluster of events.</li>
+        <li><strong>Month check:</strong> the same test at the scale of a calendar month: a theme is high if its monthly share beats its own 90th percentile across baseline months and it appears in at least three items. Months never overlap, and the check runs on the monthly table shipped with the site, so it needs no rebuild. Themes that have been rising for years clear an old baseline easily, and the page flags when that is part of the answer.</li>
+        <li><strong>Matching item:</strong> a news item whose best prophecy match has match strength 20 or more.</li>
+      </ul>
+      <h2>Rising, perennial, or just feels new</h2>
+      <p>For each theme we take its share of each year's news (full months only) and sort it into one group:</p>
+      <ul>
+        <li><strong>Rising for years:</strong> the robust trend (the median of all year-to-year slopes, so one extreme year cannot drive it) rises at least 4% of the theme's average per year, the last three years average at least 1.4× the first three, and at least three of the last four years sit above the 10-year median.</li>
+        <li><strong>Fading:</strong> the mirror image.</li>
+        <li><strong>Comes in waves:</strong> otherwise, if its busiest month is 8× a normal month or more, or it swings widely from year to year.</li>
+        <li><strong>Always with us:</strong> otherwise, if its yearly share stays steady (varies by less than 40% of its average).</li>
+        <li><strong>Too rare to tell:</strong> under 0.2% of all items.</li>
+      </ul>
+      <p>Eleven yearly points are few, and a "rising" theme may partly reflect how Wikipedia's editors log the news. Treat these as strong descriptions of this record, not laws of history.</p>
+
+      <p>What the index cannot tell you: Wikipedia's editors choose what to log, coverage varies by region and year, the theme word lists are hand-built, and themes like war, hunger and displacement tend to rise together. Ten years is also too short to call anything unprecedented in history. An unusual week is unusual <em>in this record, by these rules</em>.</p>
+
+      <h2>Forecasts and scoring</h2>
+      <p>Matching old texts to new events can never test foresight, because the match is made after the fact. So ESCHATON also makes forecasts before the fact, about the one thing it measures: its own news index.</p>
+      <ul>
+        <li><strong>What is forecast:</strong> for each theme averaging at least 0.5% of the news, whether next month's share will be above that theme's median month; and whether three or more themes will run high at once.</li>
+        <li><strong>Three models compete.</strong> <em>Base rate</em>: how often the event happened in past months. <em>Momentum</em>: the same, split by whether the theme was above its median the month before. <em>Momentum + convergence</em>: further split by whether three or more themes were running high at once. If convergence meant something, the third model would win.</li>
+        <li><strong>Scoring:</strong> the Brier score, the average of (forecast − outcome)², where the outcome is 1 or 0. Zero is perfect; always saying 50% scores 0.25. Probabilities are smoothed counts, (hits + 1) ÷ (cases + 2), so no forecast is ever 0% or 100%.</li>
+        <li><strong>Backtest:</strong> every month from January 2019 was forecast using only earlier months, then scored. The page recomputes this live from the shipped data.</li>
+        <li><strong>Live forecasts:</strong> issued in the last days of each month for the next month, with the current month to date as the starting state, then written to the registry before the month begins. They are scored automatically once the month's news is in.</li>
+        <li><strong>What would refute it:</strong> after 12 live months, if momentum's Brier score is not below the base rate's, the momentum claim is wrong; if convergence does not beat momentum, convergence has no predictive value. The backtest already points to the second.</li>
+      </ul>
+
+      <h2>The control test</h2>
+      <p>Does the matcher find something specific to prophecies, or would it "find" matches in anything? To check, ESCHATON builds 30 decoy prophecies from shuffled parts of the real ones: theme weights moved to random other themes, keywords drawn at random from the whole pool, concrete markers borrowed from other prophecies, and the same evidence and specificity ratings. Every news item is scored against the decoys as well as the real texts. If decoys match about as often, the matches are an artefact of the method. The result appears under the index once the data has been rebuilt.</p>
+
+      <h2>The public registry</h2>
+      <ul>
+        <li><strong>Append-only chain:</strong> <code>data/registry.json</code> holds every forecast, registered prediction and outcome. Each entry's fingerprint is the SHA-256 hash of its content plus the previous entry's fingerprint. Changing, deleting or reordering anything breaks every fingerprint after it, and this page checks the whole chain in your browser.</li>
+        <li><strong>Independent timestamps:</strong> each new chain head is also stamped with <a href="https://opentimestamps.org" target="_blank" rel="noopener">OpenTimestamps</a>, which anchors the hash in the Bitcoin blockchain for free. Anyone can check a proof with the <code>ots verify</code> tool. Git history is a third record.</li>
+        <li><strong>Outcomes:</strong> recorded later as separate entries that point to the original, never by editing it.</li>
+        <li><strong>Who can register:</strong> the repository owner and collaborators directly; anyone else's issue is registered when a maintainer adds the <code>register</code> label, so the registry can't be spammed.</li>
+        <li><strong>Drafts in this browser</strong> carry a timestamp and fingerprint too, and keep earlier fingerprints when edited. But you control your own browser, so a draft proves nothing to anyone else until it is registered.</li>
+      </ul>
+
+      <h2>Longer history</h2>
+      <p>Two free ways to look back further than 2016. The Wikipedia ingest accepts an earlier start date; older daily pages are patchier, and missing days are skipped rather than guessed. For decades, the optional New York Times Archive API (free key) adds monthly theme shares from headlines and abstracts back to 1945 or earlier. That series is a different lens, so it is shown separately and only compared with itself, decade against decade.</p>
+
+      <h2>Rating rubrics</h2>
+      <div class="scroll"><table class="formula">
+        <thead><tr><th>Rating</th><th>Specificity</th><th>Evidence quality</th></tr></thead>
+        <tbody>
+          <tr><td>5</td><td>Exact date or quantity plus a named outcome</td><td>Dated publication or securely dated ancient text, stable transmission, clearly before any matched event</td></tr>
+          <tr><td>4</td><td>Named place or measurable condition, or an exact date</td><td>Early, well-attested text; minor uncertainty about date or wording</td></tr>
+          <tr><td>3</td><td>Concrete mechanism or image, no date</td><td>Authentic but late, fragmentary, or plausibly written after some events it describes</td></tr>
+          <tr><td>2</td><td>Recurring kinds of events (war, famine, decline)</td><td>Public record only after the events it is matched to, or contested by its own community</td></tr>
+          <tr><td>1</td><td>Moral or mythic portrait with no testable sign</td><td>Documented or near-certain forgery</td></tr>
+        </tbody>
+      </table></div>
+      <p>Ratings are our judgments, with a written reason on every record. They are meant to be argued with; edit <code>data/prophecies.json</code> to change them.</p>
+
+      <h2>Prediction results</h2>
+      <ul class="status-defs">
+        <li><span class="pill s-pending">Pending</span> The resolve-by date has not passed.</li>
+        <li><span class="pill s-supported">Supported</span> The outcome met criteria that were stated before it happened.</li>
+        <li><span class="pill s-failed">Failed</span> The resolve-by date passed without the criteria being met.</li>
+        <li><span class="pill s-inconclusive">Inconclusive</span> The criteria are vague or contested, the claim has no date, or the record may have been written after the event.</li>
+      </ul>
+
+      <h2>Sourcing rules</h2>
+      <ul>
+        <li>Every record names a work, a locator (chapter, verse, line, hadith or reading number) and an edition or translation.</li>
+        <li>Quotations come from public-domain editions (KJV, Bellows, Evelyn-White, original Latin and French) or are kept under fifteen words. Everything else is labelled as a paraphrase.</li>
+        <li>Where a tradition is oral, contested within its own community, or known only from a late record, the record says so and the evidence rating reflects it.</li>
+        <li>Links point to reference editions or overviews for checking, not to endorsements.</li>
+      </ul>
+
+      <h2>Known limits</h2>
+      <ul>
+        <li>Capitalized words inside a sentence are treated as names, so "Mark Carney" or "Miami Heat" do not trigger the archetypes for mark or heat. Generic event words such as Hurricane, War or Outbreak still count when capitalized.</li>
+        <li>Matching reads words, not meaning. Negation is handled by clause-level rules, which catch plain denials ("officials deny…", "there is no…", "claims of… are false") but not sarcasm, hypotheticals ("could", "if"), or a denial reported by someone who is not credible.</li>
+        <li>Scores on Check an event have no baseline of their own; This week supplies one for news as a whole.</li>
+        <li>Any large enough set of vague texts will contain a match for any event. The specificity and evidence terms exist to discount exactly that.</li>
+        <li>Thirty texts are a sample. Absence from the database means nothing about a tradition.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<div class="drawer" id="drawer" hidden>
+  <div class="drawer-back" data-close></div>
+  <article class="drawer-panel" role="dialog" aria-modal="true" aria-labelledby="d-title" tabindex="-1">
+    <button type="button" class="close" data-close aria-label="Close">×</button>
+    <div id="drawer-body"></div>
+  </article>
+</div>
+
+<footer class="foot">
+  <p>ESCHATON is a comparative study tool. It treats every text with the same rules and endorses none of them. Static HTML, CSS, JavaScript and JSON; no backend, no paid APIs.</p>
+</footer>
+
+<script src="data/bundle.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/registry.js"></script>
+<script src="js/forecast.js"></script>
+<script src="js/indexer.js"></script>
+<script src="js/wiki.js"></script>
+<script src="js/graph.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
