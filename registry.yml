@@ -1,0 +1,88 @@
+name: Prediction registry
+
+# Free. Registers predictions filed with the "Register a prediction" issue form, records outcomes you enter
+# by hand, and timestamps every new registry head with OpenTimestamps (anchored in Bitcoin, no fees, no keys).
+#
+# Who can register: issues opened by the repository owner or collaborators register immediately. Anyone else's
+# issue registers when a maintainer adds the label "register", so strangers can't fill the registry with spam.
+
+on:
+  issues:
+    types: [opened, labeled]
+  workflow_dispatch:
+    inputs:
+      seq:
+        description: 'Registry number (#) of the claim to resolve'
+        required: true
+      outcome:
+        description: 'Outcome'
+        type: choice
+        options: [supported, failed, inconclusive]
+      evidence:
+        description: 'What happened, with a source link'
+        required: true
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: eschaton-data
+  cancel-in-progress: false
+
+jobs:
+  register:
+    if: >-
+      github.event_name == 'issues' && (contains(github.event.issue.labels.*.name, 'prediction') || startsWith(github.event.issue.title, 'Prediction:')) &&
+      ((github.event.action == 'opened' && contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.issue.author_association)) ||
+       (github.event.action == 'labeled' && github.event.label.name == 'register'))
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - id: reg
+        name: Append to registry
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_USER: ${{ github.event.issue.user.login }}
+          ISSUE_CREATED: ${{ github.event.issue.created_at }}
+          ISSUE_URL: ${{ github.event.issue.html_url }}
+        run: node tools/register-issue.mjs
+      - name: Timestamp and commit
+        if: steps.reg.outputs.hash
+        run: bash tools/stamp.sh "Register prediction #${{ steps.reg.outputs.seq }} (issue ${{ github.event.issue.number }})"
+      - name: Reply on the issue
+        uses: actions/github-script@v7
+        env:
+          HASH: ${{ steps.reg.outputs.hash }}
+          SEQ: ${{ steps.reg.outputs.seq }}
+          ISSUED: ${{ steps.reg.outputs.issued }}
+          ERR: ${{ steps.reg.outputs.error }}
+        with:
+          script: |
+            const { HASH, SEQ, ISSUED, ERR } = process.env;
+            const body = HASH
+              ? `Registered as **#${SEQ}** at ${ISSUED}.\n\nSHA-256: \`${HASH}\`\n\nThis entry is now part of the hash chain in \`data/registry.json\`; an OpenTimestamps proof of the chain head is in \`data/stamps/head-${String(SEQ).padStart(5,'0')}.txt.ots\`. It cannot be edited. When the deadline passes, a maintainer records the outcome as a separate entry.`
+              : `Not registered: ${ERR || 'unknown error'}\n\nEdit the issue and ask a maintainer to add the \`register\` label to try again.`;
+            await github.rest.issues.createComment({ owner: context.repo.owner, repo: context.repo.repo, issue_number: context.issue.number, body });
+
+  resolve:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - name: Append resolution
+        env:
+          SEQ: ${{ inputs.seq }}
+          OUTCOME: ${{ inputs.outcome }}
+          EVIDENCE: ${{ inputs.evidence }}
+          ACTOR: ${{ github.actor }}
+        run: node tools/resolve.mjs
+      - name: Timestamp and commit
+        env:
+          SEQ: ${{ inputs.seq }}
+        run: bash tools/stamp.sh "Resolve prediction #$SEQ"

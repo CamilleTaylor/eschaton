@@ -1,0 +1,48 @@
+name: Daily archetype index
+
+on:
+  schedule:
+    - cron: '17 6 * * *'   # every day at 06:17 UTC, after Wikipedia editors have filled in the previous day
+  workflow_dispatch:
+    inputs:
+      rebuild:
+        description: 'Refetch everything from the start date (use after editing the lexicons)'
+        type: boolean
+        default: false
+      start:
+        description: 'Start date for a rebuild, YYYY-MM-DD (earlier = longer history; older portal pages are patchier). Blank keeps the current one.'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: eschaton-data
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Ingest Wikipedia Current Events
+        env:
+          ESCHATON_START: ${{ inputs.start }}
+        run: node tools/ingest.mjs ${{ (inputs.rebuild || !hashFiles('data/daily.json')) && '--rebuild' || '' }}
+      - name: Issue and resolve monthly forecasts
+        run: node tools/forecast.mjs
+      - name: Long-range archive (only if an NYT key is set)
+        env:
+          NYT_API_KEY: ${{ secrets.NYT_API_KEY }}
+        if: env.NYT_API_KEY != ''
+        run: node tools/longrange-nyt.mjs --budget 60
+      - name: Timestamp, bundle and commit
+        run: |
+          git add data/daily.json data/index.json
+          [ -e data/longrange.json ] || true
+          bash tools/stamp.sh "Daily index: $(date -u +%Y-%m-%d)"
